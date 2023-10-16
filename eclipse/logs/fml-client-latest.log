@@ -1,0 +1,246 @@
+[12:17:27] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
+[12:17:27] [main/INFO] [FML/]: Forge Mod Loader version 7.99.40.1614 for Minecraft 1.7.10 loading
+[12:17:27] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_371, running on Linux:amd64:6.3.0-kali1-amd64, installed at /usr/lib/jvm/jdk1.8.0_371/jre
+[12:17:27] [main/DEBUG] [FML/]: Java classpath at launch is /home/alex/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/start:/home/alex/Desktop/MODS/MarchOfEnts/libs/LOTRMod v36.15.jar:/home/alex/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar:/home/alex/.gradle/caches/modules-2/files-2.1/net.minecraft/launchwrapper/1.12/111e7bea9c968cdb3d06ef4632bf7ff0824d0f36/launchwrapper-1.12.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/5.0.3/f9e364ae2a66ce2a543012a4668856e84e5dab74/asm-debug-all-5.0.3.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-actor_2.11/2.3.3/ed62e9fc709ca0f2ff1a3220daa8b70a2870078e/akka-actor_2.11-2.3.3.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/f771f71fdae3df231bcd54d5ca2d57f0bf93f467/config-1.2.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors-migration_2.11/1.1.0/dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f/scala-actors-migration_2.11-1.1.0.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-plugin_2.11.1/1.0.2/f361a3283452c57fa30c1ee69448995de23c60f7/scala-continuations-plugin_2.11.1-1.0.2.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.11.1/56ea2e6c025e0821f28d73ca271218b8dd04926a/scala-compiler-2.11.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-library_2.11/1.0.2/e517c53a7e9acd6b1668c5a35eccbaa3bab9aac/scala-continuations-library_2.11-1.0.2.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.1/6580347e61cc7f8e802941e7fde40fa83b8badeb/scala-reflect-2.11.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors/2.11.0/8ccfb6541de179bb1c4d45cf414acee069b7f78b/scala-actors-2.11.0.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.11/1.0.2/820fbca7e524b530fdadc594c39d49a21ea0337e/scala-xml_2.11-1.0.2.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.1/e11da23da3eabab9f4777b9220e60d44c1aab6a/scala-library-2.11.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-swing_2.11/1.0.1/b1cdd92bd47b1e1837139c1c53020e86bb9112ae/scala-swing_2.11-1.0.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-xml_2.11/1.0.2/7a80ec00aec122fba7cd4e0d4cdd87ff7e4cb6d0/scala-xml_2.11-1.0.2.jar:/home/alex/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.5/6065cc95c661255349c1d0756657be17c29a4fd3/jopt-simple-4.5.jar:/home/alex/.gradle/caches/modules-2/files-2.1/lzma/lzma/0.0.1/521616dc7487b42bef0e803bd2fa3faf668101d7/lzma-0.0.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.3.5/807ae355ee63583becd7ea60e76aab1532bb42e/realms-1.3.5.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar:/home/alex/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar:/home/alex/.gradle/caches/modules-2/files-2.1/java3d/vecmath/1.3.1/a0ae4f51da409fa0c20fa0ca59e6bbc9413ae71d/vecmath-1.3.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/3.0.3/42ccaf4761f0dfdfa805c9e340d99a755907e2dd/trove4j-3.0.3.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j-core-mojang/51.2/63d216a9311cca6be337c1e458e587f99d382b84/icu4j-core-mojang-51.2.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.paulscode/codecjorbis/20101023/c73b5636faf089d9f00e8732a829577de25237ee/codecjorbis-20101023.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.paulscode/codecwav/20101023/12f031cfe88fef5c1dd36c563c0a3a69bd7261da/codecwav-20101023.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.paulscode/libraryjavasound/20101123/5c5e304366f75f9eaa2e8cca546a1fb6109348b3/libraryjavasound-20101123.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.paulscode/librarylwjglopenal/20100824/73e80d0794c39665aec3f62eee88ca91676674ef/librarylwjglopenal-20100824.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.paulscode/soundsystem/20120107/419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6/soundsystem-20120107.jar:/home/alex/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.0.10.Final/9e50bd52ffe257a0e2cd8d971688d6ce7d174325/netty-all-4.0.10.Final.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.5.16/ef1582b11fd0943d069cdcb72e99008ac209a283/authlib-1.5.16.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar:/home/alex/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar:/home/alex/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.1/290d7ba8a1bd9566f5ddf16ad06f09af5ec9b20e/lwjgl_util-2.9.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.1/f58c5aabcef0e41718a564be9f8e412fff8db847/lwjgl-2.9.1.jar:/home/alex/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar:/home/alex/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar:/home/alex/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.0-beta9/678861ba1b2e1fccb594bb0ca03114bb05da9695/log4j-core-2.0-beta9.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.0-beta9/1dd66e68cccd907880229f9e2de1314bd13ff785/log4j-api-2.0-beta9.jar:/home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch/5.16/1f55f009c61637c10c0acfb8b5ffc600f30044b4/twitch-5.16.jar:/home/alex/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/7ff832a6eb9ab6a767f1ade2b548092d0fa64795/jinput-platform-2.0.5-natives-linux.jar:/home/alex/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/385ee093e01f587f30ee1c8a2ee7d408fd732e16/jinput-platform-2.0.5-natives-windows.jar:/home/alex/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/53f9c919f34d2ca9de8c51fc4e1e8282029a9232/jinput-platform-2.0.5-natives-osx.jar:/home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch-platform/5.16/7c6affe439099806a4f552da14c42f9d643d8b23/twitch-platform-5.16-natives-windows-32.jar:/home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch-platform/5.16/39d0c3d363735b4785598e0e7fbf8297c706a9f9/twitch-platform-5.16-natives-windows-64.jar:/home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch-platform/5.16/62503ee712766cf77f97252e5902786fd834b8c5/twitch-platform-5.16-natives-osx.jar:/home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch-external-platform/4.5/18215140f010c05b9f86ef6f0f8871954d2ccebf/twitch-external-platform-4.5-natives-windows-32.jar:/home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch-external-platform/4.5/c3cde57891b935d41b6680a9c5e1502eeab76d86/twitch-external-platform-4.5-natives-windows-64.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.1/4c517eca808522457dd95ee8fc1fbcdbb602efbe/lwjgl-platform-2.9.1-natives-windows.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.1/aa9aae879af8eb378e22cfc64db56ec2ca9a44d1/lwjgl-platform-2.9.1-natives-linux.jar:/home/alex/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.1/2d12c83fdfbc04ecabf02c7bc8cc54d034f0daac/lwjgl-platform-2.9.1-natives-osx.jar:/home/alex/Desktop/MODS/MarchOfEnts/build/libs/modid-1.0.jar
+[12:17:27] [main/DEBUG] [FML/]: Java library path at launch is /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib:/home/alex/.gradle/caches/minecraft/net/minecraft/minecraft_natives/1.7.10
+[12:17:27] [main/INFO] [FML/]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[12:17:27] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
+[12:17:27] [main/DEBUG] [FML/]: Added access transformer class cpw.mods.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[12:17:27] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
+[12:17:27] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
+[12:17:27] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.transformers.ForgeAccessTransformer to enqueued access transformers
+[12:17:27] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
+[12:17:27] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
+[12:17:27] [main/INFO] [FML/]: Found a command line coremod : lotr.common.coremod.LOTRLoadingPlugin
+[12:17:27] [main/DEBUG] [FML/]: Instantiating coremod class LOTRLoadingPlugin
+[12:17:27] [main/DEBUG] [FML/]: The coremod lotr.common.coremod.LOTRLoadingPlugin requested minecraft version 1.7.10 and minecraft is 1.7.10. It will be loaded.
+[12:17:27] [main/INFO] [STDOUT/]: [io.gitlab.dwarfyassassin.lotrucp.core.UCPCoreMod:<clinit>:23]: LOTR-UCP: Found core mod.
+[12:17:27] [main/DEBUG] [FML/]: Enqueued coremod LOTRLoadingPlugin
+[12:17:27] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to /home/alex/Desktop/MODS/MarchOfEnts/eclipse/.
+[12:17:27] [main/DEBUG] [FML/]: Discovering coremods
+[12:17:27] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[12:17:27] [main/INFO] [GradleStart/]: Injecting location in coremod cpw.mods.fml.relauncher.FMLCorePlugin
+[12:17:27] [main/INFO] [GradleStart/]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[12:17:27] [main/INFO] [GradleStart/]: Injecting location in coremod lotr.common.coremod.LOTRLoadingPlugin
+[12:17:27] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[12:17:27] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[12:17:27] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[12:17:27] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[12:17:27] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[12:17:27] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[12:17:27] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin} class transformers
+[12:17:27] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.MarkerTransformer
+[12:17:27] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.SideTransformer
+[12:17:27] [main/TRACE] [FML/]: Registering transformer cpw.mods.fml.common.asm.transformers.EventSubscriptionTransformer
+[12:17:27] [main/DEBUG] [FML/]: Injection complete
+[12:17:27] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin {cpw.mods.fml.relauncher.FMLCorePlugin}
+[12:17:27] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
+[12:17:27] [main/ERROR] [FML/]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[12:17:28] [main/ERROR] [FML/]: FML appears to be missing any signature data. This is not a good thing
+[12:17:28] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
+[12:17:28] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[12:17:28] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
+[12:17:28] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.classloading.FluidIdTransformer
+[12:17:28] [main/DEBUG] [FML/]: Injection complete
+[12:17:28] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
+[12:17:28] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
+[12:17:28] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
+[12:17:28] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[12:17:28] [main/DEBUG] [FML/]: Loaded 57 rules from AccessTransformer config file fml_at.cfg
+[12:17:28] [main/DEBUG] [FML/]: Loaded 89 rules from AccessTransformer config file forge_at.cfg
+[12:17:28] [main/DEBUG] [FML/]: Validating minecraft
+[12:17:28] [main/DEBUG] [FML/]: Minecraft validated, launching...
+[12:17:28] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[12:17:28] [main/DEBUG] [FML/]: Injecting coremod LOTRLoadingPlugin {lotr.common.coremod.LOTRLoadingPlugin} class transformers
+[12:17:29] [main/TRACE] [FML/]: Registering transformer lotr.common.coremod.LOTRClassTransformer
+[12:17:29] [main/TRACE] [FML/]: Registering transformer io.gitlab.dwarfyassassin.lotrucp.core.UCPClassTransformer
+[12:17:29] [main/DEBUG] [FML/]: Injection complete
+[12:17:29] [main/DEBUG] [FML/]: Running coremod plugin for LOTRLoadingPlugin {lotr.common.coremod.LOTRLoadingPlugin}
+[12:17:29] [main/DEBUG] [FML/]: Running coremod plugin LOTRLoadingPlugin
+[12:17:29] [main/DEBUG] [FML/]: Coremod plugin class LOTRLoadingPlugin run successfully
+[12:17:29] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[12:17:29] [main/INFO] [LaunchWrapper/]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
+[12:17:29] [main/INFO] [LaunchWrapper/]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
+[12:17:29] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[12:17:29] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchEntityPlayer:958]: LOTRCore: Patched method canEat
+[12:17:29] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchEntityLivingBase:1030]: LOTRCore: Patched method onDeath
+[12:17:29] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchEntityLivingBase:1005]: LOTRCore: Patched method getTotalArmorValue
+[12:17:29] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchEntityClientPlayerMP:1951]: LOTRCore: Patched method func_110318_g
+[12:17:45] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockStone:274]: LOTRCore: Added method getIcon
+[12:17:45] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockStone:306]: LOTRCore: Added method getIcon
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockGrass:342]: LOTRCore: Patched method updateTick
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockDirt:397]: LOTRCore: Patched method damageDropped
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockDirt:412]: LOTRCore: Patched method createStackedBlock
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockDirt:429]: LOTRCore: Patched method getSubBlocks
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockDirt:446]: LOTRCore: Patched method getDamageValue
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockDirt:383]: LOTRCore: Patched method <clinit>
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockStaticLiquid:484]: LOTRCore: Patched method updateTick
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockPistonBase:856]: LOTRCore: Patched method onBlockEventReceived 1 times
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockPistonBase:856]: LOTRCore: Patched method canExtend 1 times
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockPistonBase:856]: LOTRCore: Patched method tryExtend 1 times
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockFire:557]: LOTRCore: Patched method updateTick
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockFire:594]: LOTRCore: Patched method tryCatchFire
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockFence:635]: LOTRCore: Patched method canConnectFenceTo
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockFence:649]: LOTRCore: Patched method func_149825_a
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockTrapdoor:757]: LOTRCore: Patched method getRenderType
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockTrapdoor:729]: LOTRCore: Patched method canPlaceBlockOnSide
+[12:17:46] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockTrapdoor:743]: LOTRCore: Patched method func_150119_a
+[12:17:47] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockCauldron:887]: LOTRCore: Patched method getRenderType
+[12:17:47] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockWall:793]: LOTRCore: Patched method canConnectWallTo
+[12:17:47] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchBlockAnvil:927]: LOTRCore: Added method getCollisionBoundingBoxFromPool
+[12:17:47] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchPotionDamage:1857]: LOTRCore: Patched method func_111183_a
+[12:17:48] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchEntityMinecart:1229]: LOTRCore: Patched method func_145821_a
+[12:17:48] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchItemStack:1771]: LOTRCore: Patched method attemptDamageItem
+[12:17:48] [main/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchEntityHorse:1092]: LOTRCore: Patched method moveEntityWithHeading
+[12:18:09] [Client thread/INFO] [STDOUT/]: [tv.twitch.StandardCoreAPI:<init>:16]: If on Windows, make sure to provide all of the necessary dll's as specified in the twitchsdk README. Also, make sure to set the PATH environment variable to point to the directory containing the dll's.
+[12:18:09] [Client thread/INFO] [STDOUT/]: [lotr.common.coremod.LOTRClassTransformer:patchRenderBlocks:1919]: LOTRCore: Patched method renderBlockByRenderType
+[12:18:10] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - LanguageManager took 0.030s
+[12:18:11] [Client thread/INFO] [FML/]: Could not load splash.properties, will create a default one
+[12:18:11] [Client thread/ERROR] [FML/]: Could not save the splash.properties file
+java.io.FileNotFoundException: ./config/splash.properties (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:1.8.0_371]
+	at java.io.FileOutputStream.open(FileOutputStream.java:270) ~[?:1.8.0_371]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213) ~[?:1.8.0_371]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162) ~[?:1.8.0_371]
+	at java.io.FileWriter.<init>(FileWriter.java:90) ~[?:1.8.0_371]
+	at cpw.mods.fml.client.SplashProgress.start(SplashProgress.java:151) [SplashProgress.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:193) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:522) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:942) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_371]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_371]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_371]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_371]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]
+[12:18:11] [Client thread/INFO] [STDOUT/]: [cpw.mods.fml.client.SplashProgress:start:188]: ---- Minecraft Crash Report ----
+// Ooh. Shiny.
+
+Time: 10/16/23 12:18 PM
+Description: Loading screen debug info
+
+This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Linux (amd64) version 6.3.0-kali1-amd64
+	Java Version: 1.8.0_371, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 75219568 bytes (71 MB) / 189267968 bytes (180 MB) up to 848297984 bytes (809 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	GL info: ' Vendor: 'Intel' Version: '4.6 (Compatibility Profile) Mesa 23.2.1-1' Renderer: 'Mesa Intel(R) HD Graphics 4600 (HSW GT2)'
+[12:18:11] [Client thread/INFO] [MinecraftForge/]: Attempting early MinecraftForge initialization
+[12:18:11] [Client thread/INFO] [FML/]: MinecraftForge v10.13.4.1614 Initialized
+[12:18:12] [Client thread/INFO] [FML/]: Replaced 183 ore recipies
+[12:18:12] [Client thread/INFO] [MinecraftForge/]: Completed early MinecraftForge initialization
+[12:18:12] [Client thread/DEBUG] [FML/]: No config directory found, creating one: /home/alex/Desktop/MODS/MarchOfEnts/eclipse/config
+[12:18:12] [Client thread/INFO] [FML/]: Config directory created successfully
+[12:18:12] [Client thread/DEBUG] [FML/]: File /home/alex/Desktop/MODS/MarchOfEnts/eclipse/config/injectedDependencies.json not found. No dependencies injected
+[12:18:12] [Client thread/INFO] [LOTR-UCP/]: Running patcher FML for cpw.mods.fml.common.LoadController
+[12:18:12] [Client thread/INFO] [LOTR-UCP/]: Patched the FML load controller.
+[12:18:12] [Client thread/INFO] [LOTR-UCP/]: Ran all active patches.
+[12:18:15] [Client thread/DEBUG] [FML/]: Building injected Mod Containers [cpw.mods.fml.common.FMLContainer, net.minecraftforge.common.ForgeModContainer]
+[12:18:15] [Client thread/DEBUG] [FML/]: Attempting to load mods contained in the minecraft jar file and associated classes
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related directory at /home/alex/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/start, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/Desktop/MODS/MarchOfEnts/libs/LOTRMod v36.15.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/net.minecraft/launchwrapper/1.12/111e7bea9c968cdb3d06ef4632bf7ff0824d0f36/launchwrapper-1.12.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/5.0.3/f9e364ae2a66ce2a543012a4668856e84e5dab74/asm-debug-all-5.0.3.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-actor_2.11/2.3.3/ed62e9fc709ca0f2ff1a3220daa8b70a2870078e/akka-actor_2.11-2.3.3.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/f771f71fdae3df231bcd54d5ca2d57f0bf93f467/config-1.2.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors-migration_2.11/1.1.0/dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f/scala-actors-migration_2.11-1.1.0.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-plugin_2.11.1/1.0.2/f361a3283452c57fa30c1ee69448995de23c60f7/scala-continuations-plugin_2.11.1-1.0.2.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.11.1/56ea2e6c025e0821f28d73ca271218b8dd04926a/scala-compiler-2.11.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-library_2.11/1.0.2/e517c53a7e9acd6b1668c5a35eccbaa3bab9aac/scala-continuations-library_2.11-1.0.2.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.1/6580347e61cc7f8e802941e7fde40fa83b8badeb/scala-reflect-2.11.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors/2.11.0/8ccfb6541de179bb1c4d45cf414acee069b7f78b/scala-actors-2.11.0.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.11/1.0.2/820fbca7e524b530fdadc594c39d49a21ea0337e/scala-xml_2.11-1.0.2.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.1/e11da23da3eabab9f4777b9220e60d44c1aab6a/scala-library-2.11.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-swing_2.11/1.0.1/b1cdd92bd47b1e1837139c1c53020e86bb9112ae/scala-swing_2.11-1.0.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-xml_2.11/1.0.2/7a80ec00aec122fba7cd4e0d4cdd87ff7e4cb6d0/scala-xml_2.11-1.0.2.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.5/6065cc95c661255349c1d0756657be17c29a4fd3/jopt-simple-4.5.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/lzma/lzma/0.0.1/521616dc7487b42bef0e803bd2fa3faf668101d7/lzma-0.0.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.3.5/807ae355ee63583becd7ea60e76aab1532bb42e/realms-1.3.5.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/java3d/vecmath/1.3.1/a0ae4f51da409fa0c20fa0ca59e6bbc9413ae71d/vecmath-1.3.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/3.0.3/42ccaf4761f0dfdfa805c9e340d99a755907e2dd/trove4j-3.0.3.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j-core-mojang/51.2/63d216a9311cca6be337c1e458e587f99d382b84/icu4j-core-mojang-51.2.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.paulscode/codecjorbis/20101023/c73b5636faf089d9f00e8732a829577de25237ee/codecjorbis-20101023.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.paulscode/codecwav/20101023/12f031cfe88fef5c1dd36c563c0a3a69bd7261da/codecwav-20101023.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.paulscode/libraryjavasound/20101123/5c5e304366f75f9eaa2e8cca546a1fb6109348b3/libraryjavasound-20101123.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.paulscode/librarylwjglopenal/20100824/73e80d0794c39665aec3f62eee88ca91676674ef/librarylwjglopenal-20100824.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.paulscode/soundsystem/20120107/419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6/soundsystem-20120107.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.0.10.Final/9e50bd52ffe257a0e2cd8d971688d6ce7d174325/netty-all-4.0.10.Final.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.5.16/ef1582b11fd0943d069cdcb72e99008ac209a283/authlib-1.5.16.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.1/290d7ba8a1bd9566f5ddf16ad06f09af5ec9b20e/lwjgl_util-2.9.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.1/f58c5aabcef0e41718a564be9f8e412fff8db847/lwjgl-2.9.1.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.0-beta9/678861ba1b2e1fccb594bb0ca03114bb05da9695/log4j-core-2.0-beta9.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.0-beta9/1dd66e68cccd907880229f9e2de1314bd13ff785/log4j-api-2.0-beta9.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch/5.16/1f55f009c61637c10c0acfb8b5ffc600f30044b4/twitch-5.16.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/7ff832a6eb9ab6a767f1ade2b548092d0fa64795/jinput-platform-2.0.5-natives-linux.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/385ee093e01f587f30ee1c8a2ee7d408fd732e16/jinput-platform-2.0.5-natives-windows.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/53f9c919f34d2ca9de8c51fc4e1e8282029a9232/jinput-platform-2.0.5-natives-osx.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch-platform/5.16/7c6affe439099806a4f552da14c42f9d643d8b23/twitch-platform-5.16-natives-windows-32.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch-platform/5.16/39d0c3d363735b4785598e0e7fbf8297c706a9f9/twitch-platform-5.16-natives-windows-64.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch-platform/5.16/62503ee712766cf77f97252e5902786fd834b8c5/twitch-platform-5.16-natives-osx.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch-external-platform/4.5/18215140f010c05b9f86ef6f0f8871954d2ccebf/twitch-external-platform-4.5-natives-windows-32.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/tv.twitch/twitch-external-platform/4.5/c3cde57891b935d41b6680a9c5e1502eeab76d86/twitch-external-platform-4.5-natives-windows-64.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.1/4c517eca808522457dd95ee8fc1fbcdbb602efbe/lwjgl-platform-2.9.1-natives-windows.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.1/aa9aae879af8eb378e22cfc64db56ec2ca9a44d1/lwjgl-platform-2.9.1-natives-linux.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.1/2d12c83fdfbc04ecabf02c7bc8cc54d034f0daac/lwjgl-platform-2.9.1-natives-osx.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Found a minecraft related file at /home/alex/Desktop/MODS/MarchOfEnts/build/libs/modid-1.0.jar, examining for mod candidates
+[12:18:15] [Client thread/DEBUG] [FML/]: Minecraft jar mods loaded successfully
+[12:18:15] [Client thread/INFO] [FML/]: Found 0 mods from the command line. Injecting into mod discoverer
+[12:18:15] [Client thread/INFO] [FML/]: Searching /home/alex/Desktop/MODS/MarchOfEnts/eclipse/mods for mods
+[12:18:15] [Client thread/DEBUG] [FML/]: Examining directory start for potential mods
+[12:18:15] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory start
+[12:18:16] [Client thread/TRACE] [FML/]: Recursing into package net
+[12:18:16] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge
+[12:18:16] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.gradle
+[12:18:16] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.gradle.tweakers
+[12:18:16] [Client thread/DEBUG] [FML/]: Examining file LOTRMod v36.15.jar for potential mods
+[12:18:16] [Client thread/TRACE] [FML/]: Located mcmod.info file in file LOTRMod v36.15.jar
+[12:18:17] [Client thread/DEBUG] [FML/]: Identified a mod of type Lcpw/mods/fml/common/Mod; (lotr.common.LOTRMod) - loading
+[12:18:17] [Client thread/TRACE] [lotr/]: Parsed dependency info : [Forge@[10.13.4.1558,)] [Forge@[10.13.4.1558,)] [Botania, DragonAPI, TwilightForest]
+[12:18:19] [Client thread/DEBUG] [FML/]: Examining file forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar for potential mods
+[12:18:19] [Client thread/DEBUG] [FML/]: The mod container forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar appears to be missing an mcmod.info file
+[12:18:20] [Client thread/DEBUG] [FML/]: Examining file launchwrapper-1.12.jar for potential mods
+[12:18:20] [Client thread/DEBUG] [FML/]: The mod container launchwrapper-1.12.jar appears to be missing an mcmod.info file
+[12:18:20] [Client thread/DEBUG] [FML/]: Examining file jsr305-1.3.9.jar for potential mods
+[12:18:20] [Client thread/DEBUG] [FML/]: The mod container jsr305-1.3.9.jar appears to be missing an mcmod.info file
+[12:18:20] [Client thread/DEBUG] [FML/]: Examining file asm-debug-all-5.0.3.jar for potential mods
+[12:18:20] [Client thread/DEBUG] [FML/]: The mod container asm-debug-all-5.0.3.jar appears to be missing an mcmod.info file
+[12:18:21] [Client thread/DEBUG] [FML/]: Examining file akka-actor_2.11-2.3.3.jar for potential mods
+[12:18:21] [Client thread/DEBUG] [FML/]: The mod container akka-actor_2.11-2.3.3.jar appears to be missing an mcmod.info file
+[12:18:21] [Client thread/DEBUG] [FML/]: Examining file config-1.2.1.jar for potential mods
+[12:18:21] [Client thread/DEBUG] [FML/]: The mod container config-1.2.1.jar appears to be missing an mcmod.info file
+[12:18:21] [Client thread/DEBUG] [FML/]: Examining file scala-actors-migration_2.11-1.1.0.jar for potential mods
+[12:18:21] [Client thread/DEBUG] [FML/]: The mod container scala-actors-migration_2.11-1.1.0.jar appears to be missing an mcmod.info file
+[12:18:21] [Client thread/DEBUG] [FML/]: Examining file scala-continuations-plugin_2.11.1-1.0.2.jar for potential mods
+[12:18:22] [Client thread/DEBUG] [FML/]: The mod container scala-continuations-plugin_2.11.1-1.0.2.jar appears to be missing an mcmod.info file
+[12:18:22] [Client thread/DEBUG] [FML/]: Examining file scala-compiler-2.11.1.jar for potential mods
+[12:18:22] [Client thread/DEBUG] [FML/]: The mod container scala-compiler-2.11.1.jar appears to be missing an mcmod.info file
