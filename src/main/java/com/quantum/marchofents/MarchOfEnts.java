@@ -9,6 +9,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.stats.Achievement;
+import net.minecraftforge.common.AchievementPage;
 
 @Mod(modid = MarchOfEnts.MODID, name = MarchOfEnts.NAME, version = MarchOfEnts.VERSION, dependencies = "required-after:lotr")
 
@@ -33,7 +35,10 @@ public class MarchOfEnts
 	}
 	
 	@Mod.EventHandler
-	public void init(FMLInitializationEvent event) {}
+	public void init(FMLInitializationEvent event) {
+		MarchOfEnts.achievementNauglamir.registerStat();
+		AchievementPage.registerAchievementPage(new AchievementPage("March Of The Ents Achievements", new Achievement[] {MarchOfEnts.achievementNauglamir}));
+	}
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {}
@@ -47,6 +52,7 @@ public class MarchOfEnts
 			
 		}
 	};
+	public static Achievement achievementNauglamir = new Achievement("achievement.nauglamir", "nauglamir", 2, 1, Items.nauglamir, MarchOfEnts.achievementNauglamir).setSpecial();
 	
 	
 	

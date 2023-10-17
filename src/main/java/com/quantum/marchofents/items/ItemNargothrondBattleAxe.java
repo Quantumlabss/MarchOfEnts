@@ -7,6 +7,7 @@ public class ItemNargothrondBattleAxe extends LOTRItemBattleaxe {
 
 	public ItemNargothrondBattleAxe(LOTRMaterial hIGH_ELVEN) {
 		super(hIGH_ELVEN);
+		
 		// TODO Auto-generated constructor stub
 	}
 
