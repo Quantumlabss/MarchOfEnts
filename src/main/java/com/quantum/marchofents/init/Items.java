@@ -77,21 +77,21 @@ public class Items {
 		nauglamir = new ItemNauglamir().setUnlocalizedName("ItemNauglamir").setTextureName("marchofents:Nauglamir").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		numenoreanScimitar = new ItemNumenorScimitar(LOTRMaterial.BLACK_NUMENOREAN).setUnlocalizedName("ItemNumenorScimitar").setTextureName("marchofents:numenorean_scimitar").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		numenoreanSword = new ItemNumenoreanSword(LOTRMaterial.BLACK_NUMENOREAN).setUnlocalizedName("ItemNumenoreanSword").setTextureName("marchofents:numenorean_sword").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		lebenninPike = new ItemLebenninPike(LOTRMaterial.PELARGIR).setUnlocalizedName("ItemLebenninPike").setTextureName("marchofents/Large-2:pike_lebennin").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		lebenninPike = new ItemLebenninPike(LOTRMaterial.PELARGIR).setUnlocalizedName("ItemLebenninPike").setTextureName("marchofents:pike_lebennin").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		lebenninSword = new ItemLebenninSword(LOTRMaterial.PELARGIR).setUnlocalizedName("ItemLebenninSword").setTextureName("marchofents:sword_lebennin").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		lebenninHelm = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 0, 0).setUnlocalizedName("ItemLebenninHelm").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		lebenninChestPlate = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 1, 0).setUnlocalizedName("ItemLebenninChestPlate").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		lebenninLeggings = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 2, 0).setUnlocalizedName("ItemLebenninLeggings").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		lebenninBoots = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 3, 0).setUnlocalizedName("ItemLebenninBoots").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		elvenEliteHelm = new ItemElvenEliteArmor(LOTRMaterial.HIGH_ELVEN, 0).setUnlocalizedName("ItemElvenEliteHelm").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		elvenEliteChestplate = new ItemElvenEliteArmor(LOTRMaterial.HIGH_ELVEN, 1).setUnlocalizedName("ItemElvenEliteChestplate").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		elvenEliteLeggings = new ItemElvenEliteArmor(LOTRMaterial.HIGH_ELVEN, 2).setUnlocalizedName("ItemElvenEliteLeggings").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		elvenEliteBoots = new ItemElvenEliteArmor(LOTRMaterial.HIGH_ELVEN, 3).setUnlocalizedName("ItemElvenEliteBoots").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		fingolfinHelm = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 0).setUnlocalizedName("ItemFingolfinHelm").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		fingolfinChestplate = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 1).setUnlocalizedName("ItemFingolfinChestplate").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		fingolfinLeggings = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 2).setUnlocalizedName("ItemFingolfinLeggings").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		fingolfinBoots = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 3).setUnlocalizedName("ItemFingolfinBoots").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		elvenCirclet = new ItemElvenCirclet(LOTRMaterial.GALADHRIM, 0).setUnlocalizedName("ItemElvenCirclet").setTextureName("marchofents:MithrilSmithingHammer").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		lebenninHelm = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 0, 0).setUnlocalizedName("ItemLebenninHelm").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		lebenninChestPlate = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 1, 0).setUnlocalizedName("ItemLebenninChestPlate").setTextureName("marchofents:lebennin_Chestplate").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		lebenninLeggings = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 2, 0).setUnlocalizedName("ItemLebenninLeggings").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		lebenninBoots = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 3, 0).setUnlocalizedName("ItemLebenninBoots").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		elvenEliteHelm = new ItemElvenEliteArmor(LOTRMaterial.HIGH_ELVEN, 0).setUnlocalizedName("ItemElvenEliteHelm").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		elvenEliteChestplate = new ItemElvenEliteArmor(LOTRMaterial.HIGH_ELVEN, 1).setUnlocalizedName("ItemElvenEliteChestplate").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		elvenEliteLeggings = new ItemElvenEliteArmor(LOTRMaterial.HIGH_ELVEN, 2).setUnlocalizedName("ItemElvenEliteLeggings").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		elvenEliteBoots = new ItemElvenEliteArmor(LOTRMaterial.HIGH_ELVEN, 3).setUnlocalizedName("ItemElvenEliteBoots").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		fingolfinHelm = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 0).setUnlocalizedName("ItemFingolfinHelm").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		fingolfinChestplate = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 1).setUnlocalizedName("ItemFingolfinChestplate").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		fingolfinLeggings = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 2).setUnlocalizedName("ItemFingolfinLeggings").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		fingolfinBoots = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 3).setUnlocalizedName("ItemFingolfinBoots").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		elvenCirclet = new ItemElvenCirclet(LOTRMaterial.GALADHRIM, 0).setUnlocalizedName("ItemElvenCirclet").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		
 		
 		

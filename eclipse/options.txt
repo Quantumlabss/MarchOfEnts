@@ -54,7 +54,7 @@ streamChatUserFilter:0
 streamMicToggleBehavior:0
 forceUnicodeFont:false
 key_key.attack:-100
-key_key.use:52
+key_key.use:-99
 key_key.forward:17
 key_key.left:30
 key_key.back:31

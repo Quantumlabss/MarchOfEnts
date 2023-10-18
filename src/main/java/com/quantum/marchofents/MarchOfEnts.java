@@ -1,5 +1,6 @@
 package com.quantum.marchofents;
 
+import com.quantum.marchofents.init.Achievements;
 import com.quantum.marchofents.init.Items;
 
 import cpw.mods.fml.common.Mod;
@@ -31,13 +32,13 @@ public class MarchOfEnts
 	{
 		//init items
 		Items.init();
+		Achievements.Init();
 		
 	}
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-		MarchOfEnts.achievementNauglamir.registerStat();
-		AchievementPage.registerAchievementPage(new AchievementPage("March Of The Ents Achievements", new Achievement[] {MarchOfEnts.achievementNauglamir}));
+		
 	}
 	
 	@Mod.EventHandler
@@ -52,7 +53,7 @@ public class MarchOfEnts
 			
 		}
 	};
-	public static Achievement achievementNauglamir = new Achievement("achievement.nauglamir", "nauglamir", 2, 1, Items.nauglamir, MarchOfEnts.achievementNauglamir).setSpecial();
+	
 	
 	
 	

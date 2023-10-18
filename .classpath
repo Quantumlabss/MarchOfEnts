@@ -306,7 +306,102 @@
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/Desktop/MarchOfEnts/libs/LOTRMod v36.15.jar">
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTRMod v36.15.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/fr_CA.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/fi_FI.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/es_MX.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/hu_HU.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/hr_HR.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/nl_NL.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/pt_BR.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/pl_PL.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/qya_AA.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/ja_JP.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/fr_FR.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/de_DE.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/zh_CN.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/readme.txt">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/tr_TR.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/it_IT.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/en_US.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/pt_PT.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/Desktop/Mods/MarchOfEnts/libs/LOTR_UpdatedLangFiles/es_AR.lang">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>
