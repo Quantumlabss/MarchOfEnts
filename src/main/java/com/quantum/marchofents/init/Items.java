@@ -123,5 +123,7 @@ public class Items {
 		GameRegistry.registerItem(fingolfinBoots, fingolfinBoots.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(elvenCirclet, elvenCirclet.getUnlocalizedName().substring(5));
 	}
+	
+
 
 }

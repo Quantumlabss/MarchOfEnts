@@ -17,7 +17,7 @@ public class Achievements {
 	public static void Init() {
 		
 		
-		Achievements.achievementNauglamir.broadcastEarning((EntityPlayer) entity);
+		//Achievements.achievementNauglamir.broadcastEarning((EntityPlayer) entity);
 		achievementNauglamir = new LOTRAchievement(Category.GENERAL, 0, Items.nauglamir, "achievement.nauglamir").createTitle();
 		
 		
