@@ -51,8 +51,8 @@ public class MOERenderLargeItem extends LOTRRenderLargeItem {
 		String itemIconString = item.getUnlocalizedName().substring("item.".length());
 		itemIconString = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, itemIconString);
 		GameRegistry.UniqueIdentifier UID = GameRegistry.findUniqueIdentifierFor(item);
-		String modID = StringUtils.isNullOrEmpty(UID.modId) ? "minecraft" : UID.modId;
-		return new ResourceLocation(modID, "textures/items/" + folder + "/" + itemIconString + ".png");
+		//String modID = StringUtils.isNullOrEmpty(UID.modId) ? "minecraft" : UID.modId;
+		return new ResourceLocation("marchofents:textures/items/" + folder + "/" + itemIconString + ".png");
 	}
 	
 	public static MOERenderLargeItem getRenderIfLarge(Item item) {

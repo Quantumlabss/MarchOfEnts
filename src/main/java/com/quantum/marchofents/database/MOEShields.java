@@ -16,7 +16,7 @@ public class MOEShields {
 	public static LOTRShields addAlignmentShield(String enumName, LOTRFaction faction) {
 		
 		LOTRShields shield = MOECommander.addAlignmentShield(enumName, faction);
-		MOECommander.setShieldTexture(shield, new ResourceLocation("marchofents", "shield" + shield.name().toLowerCase(Locale.ROOT) + ".png"));
+		MOECommander.setShieldTexture(shield, new ResourceLocation("marchofents", "shield/" + shield.name().toLowerCase(Locale.ROOT) + ".png"));
 		
 		return shield;
 		

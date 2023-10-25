@@ -18,12 +18,12 @@ public class ClientProxy extends ServerProxy implements IResourceManagerReloadLi
 	
 	//private final Minecraft minecraft = Minecraft.getMinecraft();
 	
-	public static MOERenderManager renderManager;
+	public static MOERenderManager rendererManager;
 	
 	
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
-		renderManager = new MOERenderManager();
+		rendererManager = new MOERenderManager();
 		
 		
 		

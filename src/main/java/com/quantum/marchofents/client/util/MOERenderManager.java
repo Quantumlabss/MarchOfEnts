@@ -8,6 +8,12 @@ import com.quantum.marchofents.client.util.MOERenderLargeItem;
 import com.quantum.marchofents.client.util.MOECommander;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import lotr.client.render.item.LOTRRenderBow;
+import lotr.client.render.item.LOTRRenderCrossbow;
+import lotr.client.render.item.LOTRRenderElvenBlade;
+import lotr.common.item.LOTRItemBow;
+import lotr.common.item.LOTRItemCrossbow;
+import lotr.common.item.LOTRItemSword;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.client.resources.IReloadableResourceManager;
@@ -34,7 +40,26 @@ public class MOERenderManager implements IResourceManagerReloadListener {
 	@Override
 	public void onResourceManagerReload(IResourceManager resourceManager) {
 		largeItemRenderers.clear();
-	}
+		
+		for(Item item : MOECommander.getObjectFieldsOfType(Items.class, Item.class)) {
+			MinecraftForgeClient.registerItemRenderer(item, null);
+			MOERenderLargeItem largeItemRenderer = MOERenderLargeItem.getRenderIfLarge(item);
+			if (item instanceof LOTRItemCrossbow) {
+				MinecraftForgeClient.registerItemRenderer(item, new LOTRRenderCrossbow());
+			} else if (item instanceof LOTRItemBow) {
+				MinecraftForgeClient.registerItemRenderer(item, new LOTRRenderBow(largeItemRenderer));
+			} else if (item instanceof LOTRItemSword && ((LOTRItemSword) item).isElvenBlade()) {
+				MinecraftForgeClient.registerItemRenderer(item, new LOTRRenderElvenBlade(24.0, largeItemRenderer));
+			} else if (largeItemRenderer != null) {
+				MinecraftForgeClient.registerItemRenderer(item, largeItemRenderer);
+			}
+			if (largeItemRenderer == null) {
+				continue;
+			}
+			largeItemRenderers.add(largeItemRenderer);
+		}
+		}
+	
 	
 	
 	@SubscribeEvent

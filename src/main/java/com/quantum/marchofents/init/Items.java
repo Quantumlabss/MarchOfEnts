@@ -96,6 +96,7 @@ public class Items {
 		
 		
 		//Item Register
+		
 		GameRegistry.registerItem(arnorianLongsword, arnorianLongsword.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(nargothrondLongsword, nargothrondLongsword.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(nargothrondBattleAxe, nargothrondBattleAxe.getUnlocalizedName().substring(5));
