@@ -1,9 +1,11 @@
 package com.quantum.marchofents;
 
 
+import com.quantum.marchofents.database.MOEShields;
 import com.quantum.marchofents.init.Achievements;
 import com.quantum.marchofents.init.Items;
-import com.quantum.marchofents.proxy.CommonProxy;
+import com.quantum.marchofents.items.ItemFangornBanner;
+import com.quantum.marchofents.proxy.ServerProxy;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -29,8 +31,8 @@ public class MarchOfEnts
 	public static final String MODID = "marchofents";
 	public static final String VERSION = "1.0.0-A1";
 	
-	@SidedProxy(clientSide = "com.quantum.marchofents.proxy.CombinedClientProxy", serverSide = "com.quantum.marchofents.DedicatedServerProxy")
-	public static CommonProxy proxy;
+	@SidedProxy(clientSide = "com.quantum.marchofents.proxy.ClientProxy", serverSide = "com.quantum.marchofents.ServerProxy")
+	public static ServerProxy proxy;
 
 	
 	@Mod.Instance("marchofents")
@@ -43,7 +45,10 @@ public class MarchOfEnts
 		//init items
 		Items.init();
 		Achievements.Init();
-		proxy.preInit();
+		ItemFangornBanner.preInit();
+		
+		proxy.preInit(event);
+		
 		
 		
 	}
@@ -51,15 +56,17 @@ public class MarchOfEnts
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		
+		MOEShields.onInit();
 		
-		proxy.init();
+		
+		
 		
 	}
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		
-		proxy.postInit();
+		
 	}
 	
 	//creative tab

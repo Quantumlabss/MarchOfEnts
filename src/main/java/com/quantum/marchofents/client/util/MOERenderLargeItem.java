@@ -28,6 +28,11 @@ public class MOERenderLargeItem extends LOTRRenderLargeItem {
 	
 	public static Map<String, Float> sizeFolders = new HashMap<>();
 	
+	static {
+		sizeFolders.put("large-2x", 2.0f);
+		sizeFolders.put("large-3x", 3.0f);
+	}
+	
 	public final Item theItem;
 	public final String folderName;
 	public final float largeIconScale;
