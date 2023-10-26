@@ -1,0 +1,108 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 26/10/23 11:03 AM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.quantum.marchofents.client.util.MOERenderLargeItem.renderLargeItem(MOERenderLargeItem.java:118)
+	at com.quantum.marchofents.client.util.MOERenderLargeItem.renderLargeItem(MOERenderLargeItem.java:110)
+	at lotr.client.render.item.LOTRRenderLargeItem.renderItem(LOTRRenderLargeItem.java:207)
+	at net.minecraftforge.client.ForgeHooksClient.renderEquippedItem(ForgeHooksClient.java:232)
+	at net.minecraft.client.renderer.ItemRenderer.renderItem(ItemRenderer.java:86)
+	at net.minecraft.client.renderer.ItemRenderer.renderItemInFirstPerson(ItemRenderer.java:511)
+	at net.minecraft.client.renderer.EntityRenderer.renderHand(EntityRenderer.java:797)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1437)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.quantum.marchofents.client.util.MOERenderLargeItem.renderLargeItem(MOERenderLargeItem.java:118)
+	at com.quantum.marchofents.client.util.MOERenderLargeItem.renderLargeItem(MOERenderLargeItem.java:110)
+	at lotr.client.render.item.LOTRRenderLargeItem.renderItem(LOTRRenderLargeItem.java:207)
+	at net.minecraftforge.client.ForgeHooksClient.renderEquippedItem(ForgeHooksClient.java:232)
+	at net.minecraft.client.renderer.ItemRenderer.renderItem(ItemRenderer.java:86)
+	at net.minecraft.client.renderer.ItemRenderer.renderItemInFirstPerson(ItemRenderer.java:511)
+	at net.minecraft.client.renderer.EntityRenderer.renderHand(EntityRenderer.java:797)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1437)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player305'/115, l='MpServer', x=-35.50, y=71.62, z=-269.50]]
+	Chunk stats: MultiplayerChunkCache: 81, 81
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-29,64,-268), Chunk: (at 3,4,4 in -2,-17; contains blocks -32,0,-272 to -17,255,-257), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Level time: 254 game time, 254 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 89 total; [EntitySquid['Squid'/2566, l='MpServer', x=28.53, y=47.06, z=-282.84], EntitySquid['Squid'/2568, l='MpServer', x=24.84, y=48.28, z=-284.56], EntitySheep['Sheep'/33, l='MpServer', x=-58.50, y=83.00, z=-308.50], EntitySheep['Sheep'/34, l='MpServer', x=-59.50, y=81.00, z=-306.50], EntitySheep['Sheep'/35, l='MpServer', x=-61.50, y=80.00, z=-305.50], EntitySkeleton['Skeleton'/3107, l='MpServer', x=-14.50, y=34.00, z=-295.50], EntitySheep['Sheep'/36, l='MpServer', x=-62.38, y=80.00, z=-303.53], EntitySkeleton['Skeleton'/3108, l='MpServer', x=-13.50, y=34.00, z=-297.50], EntitySheep['Sheep'/37, l='MpServer', x=-43.53, y=81.00, z=-302.22], EntitySkeleton['Skeleton'/3109, l='MpServer', x=-14.50, y=34.00, z=-294.50], EntitySheep['Sheep'/38, l='MpServer', x=-41.50, y=83.00, z=-305.50], EntityCreeper['Creeper'/3110, l='MpServer', x=-25.41, y=34.00, z=-301.00], EntitySheep['Sheep'/39, l='MpServer', x=-42.47, y=81.00, z=-303.53], EntitySheep['Sheep'/40, l='MpServer', x=-41.50, y=83.00, z=-305.50], EntitySheep['Sheep'/41, l='MpServer', x=-52.50, y=77.00, z=-236.50], EntitySheep['Sheep'/42, l='MpServer', x=-46.22, y=63.00, z=-237.22], EntitySheep['Sheep'/43, l='MpServer', x=-47.81, y=63.00, z=-238.81], EntityChicken['Chicken'/44, l='MpServer', x=-49.50, y=80.00, z=-237.50], EntityChicken['Chicken'/45, l='MpServer', x=-45.31, y=63.00, z=-240.78], EntityChicken['Chicken'/46, l='MpServer', x=-38.56, y=62.41, z=-237.56], EntityChicken['Chicken'/47, l='MpServer', x=-42.56, y=63.00, z=-241.56], EntitySheep['Sheep'/48, l='MpServer', x=-31.48, y=73.68, z=-286.47], EntitySheep['Sheep'/49, l='MpServer', x=-31.61, y=72.00, z=-287.56], EntitySheep['Sheep'/50, l='MpServer', x=-29.01, y=77.00, z=-275.56], EntitySheep['Sheep'/51, l='MpServer', x=-26.22, y=75.00, z=-281.81], EntitySheep['Sheep'/52, l='MpServer', x=-9.47, y=65.00, z=-261.44], EntitySheep['Sheep'/53, l='MpServer', x=-13.50, y=64.00, z=-261.50], EntitySheep['Sheep'/54, l='MpServer', x=-11.50, y=64.00, z=-262.50], EntitySheep['Sheep'/55, l='MpServer', x=-11.50, y=64.00, z=-262.50], EntityItem['item.item.dyePowder.brown'/3251, l='MpServer', x=-30.63, y=83.13, z=-313.88], EntityZombie['Zombie'/3254, l='MpServer', x=-18.50, y=32.00, z=-250.50], EntityCreeper['Creeper'/3255, l='MpServer', x=-10.50, y=32.00, z=-261.50], EntityCreeper['Creeper'/3256, l='MpServer', x=-14.50, y=32.00, z=-260.50], EntityClientPlayerMP['Player305'/115, l='MpServer', x=-35.50, y=71.62, z=-269.50], EntityCreeper['Creeper'/2783, l='MpServer', x=-0.31, y=12.24, z=-270.69], EntitySquid['Squid'/2272, l='MpServer', x=-77.47, y=60.28, z=-212.84], EntitySquid['Squid'/2273, l='MpServer', x=-79.44, y=60.38, z=-210.41], EntitySquid['Squid'/2274, l='MpServer', x=-67.16, y=60.00, z=-210.94], EntitySquid['Squid'/2275, l='MpServer', x=-69.38, y=62.31, z=-217.91], EntitySquid['Squid'/2276, l='MpServer', x=-77.19, y=61.75, z=-208.97], EntitySquid['Squid'/2277, l='MpServer', x=-80.53, y=62.31, z=-210.09], EntitySquid['Squid'/2279, l='MpServer', x=-83.38, y=62.34, z=-211.28], EntitySquid['Squid'/2282, l='MpServer', x=-75.38, y=61.34, z=-209.34], EntitySquid['Squid'/2283, l='MpServer', x=-73.72, y=61.91, z=-208.41], EntitySquid['Squid'/2308, l='MpServer', x=16.31, y=57.34, z=-284.72], EntitySquid['Squid'/2309, l='MpServer', x=17.03, y=57.38, z=-297.50], EntitySquid['Squid'/2310, l='MpServer', x=26.66, y=53.66, z=-287.56], EntitySquid['Squid'/2311, l='MpServer', x=16.50, y=56.00, z=-293.50], EntitySquid['Squid'/2312, l='MpServer', x=22.03, y=56.09, z=-282.97], EntitySpider['Spider'/2824, l='MpServer', x=-36.50, y=20.00, z=-231.50], EntitySquid['Squid'/2313, l='MpServer', x=20.19, y=57.38, z=-288.34], EntitySquid['Squid'/2314, l='MpServer', x=22.94, y=55.03, z=-293.91], EntityItem['item.item.dyePowder.brown'/779, l='MpServer', x=-3.72, y=64.13, z=-259.16], EntitySquid['Squid'/2315, l='MpServer', x=17.50, y=56.38, z=-283.13], EntitySquid['Squid'/2316, l='MpServer', x=30.41, y=57.00, z=-286.94], EntitySquid['Squid'/2317, l='MpServer', x=28.06, y=57.00, z=-283.44], EntitySquid['Squid'/2318, l='MpServer', x=24.13, y=57.16, z=-280.44], EntitySquid['Squid'/2319, l='MpServer', x=18.66, y=57.34, z=-290.72], EntityBat['Bat'/2910, l='MpServer', x=-20.84, y=11.89, z=-209.50], EntityBat['Bat'/2916, l='MpServer', x=-100.72, y=32.02, z=-294.41], EntityBat['Bat'/2923, l='MpServer', x=-72.22, y=21.89, z=-333.53], EntityBat['Bat'/2926, l='MpServer', x=-59.53, y=36.45, z=-261.75], EntityBat['Bat'/2927, l='MpServer', x=-54.50, y=38.00, z=-261.50], EntityBat['Bat'/2928, l='MpServer', x=-55.75, y=35.60, z=-264.25], EntityBat['Bat'/2929, l='MpServer', x=-55.91, y=37.00, z=-266.75], EntityBat['Bat'/2930, l='MpServer', x=-52.44, y=38.00, z=-259.50], EntityBat['Bat'/2931, l='MpServer', x=-60.91, y=33.39, z=-253.72], EntityBat['Bat'/2932, l='MpServer', x=-55.38, y=36.73, z=-263.72], EntitySquid['Squid'/2426, l='MpServer', x=23.75, y=47.81, z=-265.63], EntitySquid['Squid'/2427, l='MpServer', x=28.84, y=49.38, z=-257.56], EntitySquid['Squid'/2430, l='MpServer', x=22.88, y=49.34, z=-262.22], EntitySquid['Squid'/2431, l='MpServer', x=20.53, y=47.00, z=-258.25], EntitySquid['Squid'/2433, l='MpServer', x=29.06, y=49.16, z=-264.97], EntitySquid['Squid'/2434, l='MpServer', x=28.47, y=48.06, z=-262.03], EntitySquid['Squid'/2435, l='MpServer', x=20.16, y=49.38, z=-263.09], EntitySquid['Squid'/2437, l='MpServer', x=18.59, y=48.34, z=-259.59], EntitySkeleton['Skeleton'/3029, l='MpServer', x=-35.50, y=18.00, z=-198.50], EntitySkeleton['Skeleton'/3030, l='MpServer', x=-37.50, y=18.00, z=-200.50], EntityCreeper['Creeper'/3031, l='MpServer', x=-38.50, y=18.00, z=-197.50], EntityCreeper['Creeper'/3032, l='MpServer', x=-37.50, y=18.00, z=-198.50], EntityCreeper['Creeper'/3033, l='MpServer', x=-35.50, y=18.00, z=-199.50], EntitySquid['Squid'/2522, l='MpServer', x=-64.78, y=47.38, z=-218.81], EntitySquid['Squid'/2523, l='MpServer', x=-61.72, y=46.00, z=-210.53], EntitySquid['Squid'/2524, l='MpServer', x=-67.81, y=44.75, z=-214.97], EntitySquid['Squid'/2525, l='MpServer', x=-72.06, y=43.94, z=-205.25], EntitySquid['Squid'/2526, l='MpServer', x=-64.56, y=47.34, z=-212.63], EntitySquid['Squid'/2527, l='MpServer', x=-68.56, y=45.97, z=-215.69], EntitySquid['Squid'/2528, l='MpServer', x=-73.78, y=46.75, z=-208.72], EntitySquid['Squid'/2529, l='MpServer', x=-74.59, y=46.31, z=-211.81]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:991)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Linux (amd64) version 5.15.0-76-generic
+	Java Version: 1.8.0_382, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 389165264 bytes (371 MB) / 917504000 bytes (875 MB) up to 917504000 bytes (875 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	lotr{Update v36.15 for Minecraft 1.7.10} [The Lord of the Rings Mod] (LOTRMod v36.15.jar) 
+	UCHIJAAAA	marchofents{1.0.0-A1} [March Of The Ents] (modid-1.0.jar) 
+	GL info: ' Vendor: 'Intel' Version: '4.6 (Compatibility Profile) Mesa 23.0.4-0ubuntu1~22.04.1' Renderer: 'Mesa Intel(R) HD Graphics 4600 (HSW GT2)'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: Mesa Intel(R) HD Graphics 4600 (HSW GT2) GL version 4.6 (Compatibility Profile) Mesa 23.0.4-0ubuntu1~22.04.1, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

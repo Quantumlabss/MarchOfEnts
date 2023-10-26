@@ -77,10 +77,10 @@ public class Items {
 		nauglamir = new ItemNauglamir().setUnlocalizedName("ItemNauglamir").setTextureName("marchofents:Nauglamir").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		numenoreanScimitar = new ItemNumenorScimitar(LOTRMaterial.BLACK_NUMENOREAN).setUnlocalizedName("ItemNumenorScimitar").setTextureName("marchofents:numenorean_scimitar").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		numenoreanSword = new ItemNumenoreanSword(LOTRMaterial.BLACK_NUMENOREAN).setUnlocalizedName("ItemNumenoreanSword").setTextureName("marchofents:numenorean_sword").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		lebenninPike = new ItemLebenninPike(LOTRMaterial.PELARGIR).setUnlocalizedName("ItemLebenninPike").setTextureName("marchofents:pike_lebennin").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		lebenninPike = new ItemLebenninPike(LOTRMaterial.PELARGIR).setUnlocalizedName("ItemLebenninPike").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		lebenninSword = new ItemLebenninSword(LOTRMaterial.PELARGIR).setUnlocalizedName("ItemLebenninSword").setTextureName("marchofents:sword_lebennin").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		lebenninHelm = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 0, 0).setUnlocalizedName("ItemLebenninHelm").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		lebenninChestPlate = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 1, 0).setUnlocalizedName("ItemLebenninChestPlate").setTextureName("marchofents:lebennin_Chestplate").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		lebenninChestPlate = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 1, 0).setUnlocalizedName("ItemLebenninChestPlate").setTextureName("marchofents:lebennin_chestplate").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		lebenninLeggings = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 2, 0).setUnlocalizedName("ItemLebenninLeggings").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		lebenninBoots = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 3, 0).setUnlocalizedName("ItemLebenninBoots").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		elvenEliteHelm = new ItemElvenEliteArmor(LOTRMaterial.HIGH_ELVEN, 0).setUnlocalizedName("ItemElvenEliteHelm").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);

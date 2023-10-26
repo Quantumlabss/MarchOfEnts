@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.quantum.marchofents.init.Items;
+import com.quantum.marchofents.items.ItemLebenninPike;
 import com.quantum.marchofents.client.util.MOERenderLargeItem;
 import com.quantum.marchofents.client.util.MOECommander;
 
@@ -34,6 +35,7 @@ public class MOERenderManager implements IResourceManagerReloadListener {
 		onResourceManagerReload(resMgr);
 		((IReloadableResourceManager) resMgr).registerReloadListener(this);
 		MinecraftForge.EVENT_BUS.register(this);
+		//MinecraftForgeClient.registerItemRenderer(ItemLebenninPike, PikeRenderer);
 		
 	}
 	
