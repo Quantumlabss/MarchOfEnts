@@ -1,6 +1,6 @@
 package com.quantum.marchofents.items;
 
-import com.quantum.marchofents.client.util.MOECommander;
+import com.quantum.marchofents.util.MOECommander;
 
 import lotr.common.fac.LOTRFaction;
 import lotr.common.item.LOTRItemBanner;

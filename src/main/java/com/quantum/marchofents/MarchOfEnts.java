@@ -6,8 +6,11 @@ import com.quantum.marchofents.init.Achievements;
 import com.quantum.marchofents.init.Items;
 import com.quantum.marchofents.items.ItemFangornBanner;
 import com.quantum.marchofents.proxy.ServerProxy;
+import com.quantum.marchofents.util.MOEModChecker;
 
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.ModContainer;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -38,16 +41,26 @@ public class MarchOfEnts
 	@Mod.Instance("marchofents")
 	public static MarchOfEnts instance;
 	
+	public static ModContainer getModContainer() {
+		return FMLCommonHandler.instance().findContainerFor(instance);
+	}
+	
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) 
 	{
 		//init items
-		Items.init();
+		Items.preInit();
 		Achievements.Init();
 		ItemFangornBanner.preInit();
 		
 		proxy.preInit(event);
+		
+		if(MOEModChecker.hasNEI() && MOEModChecker.hasGuiContainer()) {
+			//NEIIntegrator.registerRecipes();
+		}
+		
+		//proxy.preInit(event);
 		
 		
 		
@@ -57,6 +70,7 @@ public class MarchOfEnts
 	public void init(FMLInitializationEvent event) {
 		
 		MOEShields.onInit();
+		proxy.onInit(event);
 		
 		
 		
@@ -74,7 +88,7 @@ public class MarchOfEnts
 		
 		public Item getTabIconItem() {
 			//@Override
-			return new ItemStack(Items.arnorianLongsword).getItem();
+			return new ItemStack(Items.nauglamir).getItem();
 			
 		}
 	};

@@ -6,7 +6,7 @@ import net.minecraft.util.ResourceLocation;
 
 import java.util.Locale;
 
-import com.quantum.marchofents.client.util.MOECommander;
+import com.quantum.marchofents.util.MOECommander;
 
 
 public class MOEShields {

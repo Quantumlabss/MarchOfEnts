@@ -1,7 +1,8 @@
 package com.quantum.marchofents.init;
 
+import com.google.common.base.CaseFormat;
 import com.quantum.marchofents.MarchOfEnts;
-import com.quantum.marchofents.items.ItemArnorLongsword;
+
 import com.quantum.marchofents.items.ItemDoriathSword;
 import com.quantum.marchofents.items.ItemElvenCirclet;
 import com.quantum.marchofents.items.ItemElvenEliteArmor;
@@ -11,7 +12,7 @@ import com.quantum.marchofents.items.ItemGondolinBattleAxe;
 import com.quantum.marchofents.items.ItemGondolinWarHammer;
 import com.quantum.marchofents.items.ItemGondorWarHammer;
 import com.quantum.marchofents.items.ItemLebenninArmor;
-import com.quantum.marchofents.items.ItemLebenninPike;
+
 import com.quantum.marchofents.items.ItemLebenninSword;
 import com.quantum.marchofents.items.ItemMithrilSmithingHammer;
 import com.quantum.marchofents.items.ItemNargothrondBattleAxe;
@@ -20,6 +21,7 @@ import com.quantum.marchofents.items.ItemNauglamir;
 import com.quantum.marchofents.items.ItemNumenorScimitar;
 import com.quantum.marchofents.items.ItemNumenoreanSword;
 
+import lotr.common.item.LOTRItemPike;
 import lotr.common.item.LOTRItemSword;
 import lotr.common.item.LOTRMaterial;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -31,7 +33,7 @@ public class Items {
 	
 	
 	//items
-	public static Item arnorianLongsword;
+	public static Item longswordArnor;
 	public static Item nargothrondLongsword;
 	public static Item nargothrondBattleAxe;
 	public static Item feanorianSword;
@@ -43,7 +45,7 @@ public class Items {
 	public static Item nauglamir;
 	public static Item numenoreanScimitar;
 	public static Item numenoreanSword;
-	public static Item lebenninPike;
+	public static Item pikeLebennin;
 	public static Item lebenninSword;
 	public static Item lebenninHelm;
 	public static Item lebenninChestPlate;
@@ -61,11 +63,11 @@ public class Items {
 	//tool materials
 	
 	
-	public static void init()
+	public static void preInit()
 	{
 
 		//item init
-		arnorianLongsword = new ItemArnorLongsword(LOTRMaterial.ARNOR).setUnlocalizedName("ItemArnorLongsword").setTextureName("marchofents:dunedain_sword").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		longswordArnor = new LOTRItemSword(LOTRMaterial.ARNOR).setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		nargothrondLongsword = new ItemNargothrondLongsword(LOTRMaterial.HIGH_ELVEN).setIsElvenBlade().setUnlocalizedName("ItemNargothrondLongsword").setTextureName("marchofents:nargothrond_sword").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		feanorianSword = new ItemFeanorianSword(LOTRMaterial.HIGH_ELVEN).setIsElvenBlade().setUnlocalizedName("ItemFeanorianSword").setTextureName("marchofents:feanorian_sword").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		gondolinBattleAxe = new ItemGondolinBattleAxe(LOTRMaterial.GONDOLIN).setUnlocalizedName("ItemGondolinBattleAxe").setTextureName("marchofents:Gondolin_battleaxe").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
@@ -77,7 +79,7 @@ public class Items {
 		nauglamir = new ItemNauglamir().setUnlocalizedName("ItemNauglamir").setTextureName("marchofents:Nauglamir").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		numenoreanScimitar = new ItemNumenorScimitar(LOTRMaterial.BLACK_NUMENOREAN).setUnlocalizedName("ItemNumenorScimitar").setTextureName("marchofents:numenorean_scimitar").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		numenoreanSword = new ItemNumenoreanSword(LOTRMaterial.BLACK_NUMENOREAN).setUnlocalizedName("ItemNumenoreanSword").setTextureName("marchofents:numenorean_sword").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		lebenninPike = new ItemLebenninPike(LOTRMaterial.PELARGIR).setUnlocalizedName("ItemLebenninPike").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		pikeLebennin = new LOTRItemPike(LOTRMaterial.PELARGIR).setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		lebenninSword = new ItemLebenninSword(LOTRMaterial.PELARGIR).setUnlocalizedName("ItemLebenninSword").setTextureName("marchofents:sword_lebennin").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		lebenninHelm = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 0, 0).setUnlocalizedName("ItemLebenninHelm").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		lebenninChestPlate = new ItemLebenninArmor(LOTRMaterial.PELARGIR, 1, 0).setUnlocalizedName("ItemLebenninChestPlate").setTextureName("marchofents:lebennin_chestplate").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
@@ -88,16 +90,18 @@ public class Items {
 		elvenEliteLeggings = new ItemElvenEliteArmor(LOTRMaterial.HIGH_ELVEN, 2).setUnlocalizedName("ItemElvenEliteLeggings").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		elvenEliteBoots = new ItemElvenEliteArmor(LOTRMaterial.HIGH_ELVEN, 3).setUnlocalizedName("ItemElvenEliteBoots").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		fingolfinHelm = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 0).setUnlocalizedName("ItemFingolfinHelm").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
-		fingolfinChestplate = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 1).setUnlocalizedName("ItemFingolfinChestplate").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		fingolfinChestplate = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 1).setUnlocalizedName("ItemFingolfinChestplate").setTextureName("marchofents:fingolfin_chestplate").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		fingolfinLeggings = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 2).setUnlocalizedName("ItemFingolfinLeggings").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		fingolfinBoots = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 3).setUnlocalizedName("ItemFingolfinBoots").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		elvenCirclet = new ItemElvenCirclet(LOTRMaterial.GALADHRIM, 0).setUnlocalizedName("ItemElvenCirclet").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		
+		registerItem(pikeLebennin, "pikeLebennin");
+		registerItem(longswordArnor, "longswordArnor");
 		
 		
 		//Item Register
 		
-		GameRegistry.registerItem(arnorianLongsword, arnorianLongsword.getUnlocalizedName().substring(5));
+		//GameRegistry.registerItem(arnorianLongsword, arnorianLongsword.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(nargothrondLongsword, nargothrondLongsword.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(nargothrondBattleAxe, nargothrondBattleAxe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(feanorianSword, feanorianSword.getUnlocalizedName().substring(5));
@@ -109,7 +113,7 @@ public class Items {
 		GameRegistry.registerItem(nauglamir, nauglamir.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(numenoreanScimitar, numenoreanScimitar.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(numenoreanSword, numenoreanSword.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(lebenninPike, lebenninPike.getUnlocalizedName().substring(5));
+		//GameRegistry.registerItem(lebenninPike, lebenninPike.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(lebenninHelm, lebenninHelm.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(lebenninChestPlate, lebenninChestPlate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(lebenninLeggings, lebenninLeggings.getUnlocalizedName().substring(5));
@@ -123,6 +127,20 @@ public class Items {
 		GameRegistry.registerItem(fingolfinLeggings, fingolfinLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(fingolfinBoots, fingolfinBoots.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(elvenCirclet, elvenCirclet.getUnlocalizedName().substring(5));
+	}
+	
+	public static void registerItem(Item item, String name) {
+		String itemName = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, name);
+		item.setUnlocalizedName(itemName);
+		
+		item.setTextureName("marchofents:" + itemName);
+		GameRegistry.registerItem(item, itemName);
+	}
+
+	public static void registerItemLOTR(Item item, String name) {
+		item.setTextureName("lotr:" + name);
+		item.setUnlocalizedName("lotr:" + name);
+		GameRegistry.registerItem(item, name);
 	}
 	
 
