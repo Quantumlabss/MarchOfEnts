@@ -20,8 +20,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.Achievement;
 import net.minecraftforge.common.AchievementPage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-@Mod(modid = MarchOfEnts.MODID, name = MarchOfEnts.NAME, version = MarchOfEnts.VERSION, dependencies = "required-after:lotr")
+@Mod(modid = "marchofents", name = "March Of The Ents", version = "1.0.0-A1", dependencies = "required-after:lotr")
 
 public class MarchOfEnts 
 
@@ -33,12 +35,13 @@ public class MarchOfEnts
 	public static final String NAME = "March Of The Ents";
 	public static final String MODID = "marchofents";
 	public static final String VERSION = "1.0.0-A1";
+    public static Logger logger = LogManager.getLogger((String)"MarchOfEnts");
 	
 	@SidedProxy(clientSide = "com.quantum.marchofents.proxy.ClientProxy", serverSide = "com.quantum.marchofents.ServerProxy")
 	public static ServerProxy proxy;
 
 	
-	@Mod.Instance("marchofents")
+	@Mod.Instance(value="marchofents")
 	public static MarchOfEnts instance;
 	
 	public static ModContainer getModContainer() {
@@ -50,15 +53,15 @@ public class MarchOfEnts
 	public void preInit(FMLPreInitializationEvent event) 
 	{
 		//init items
-		Items.preInit();
+		Items.Init();
 		Achievements.Init();
 		ItemFangornBanner.preInit();
 		
 		proxy.preInit(event);
 		
-		if(MOEModChecker.hasNEI() && MOEModChecker.hasGuiContainer()) {
+		//if(MOEModChecker.hasNEI() && MOEModChecker.hasGuiContainer()) {
 			//NEIIntegrator.registerRecipes();
-		}
+	//	}
 		
 		//proxy.preInit(event);
 		
@@ -79,6 +82,7 @@ public class MarchOfEnts
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
+		proxy.postInit(event);
 		
 		
 	}

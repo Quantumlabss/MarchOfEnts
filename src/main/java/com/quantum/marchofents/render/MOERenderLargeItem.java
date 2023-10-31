@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.google.common.base.CaseFormat;
-
+import com.quantum.marchofents.MarchOfEnts;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -28,18 +28,43 @@ import org.lwjgl.opengl.GL11;
 
 public class MOERenderLargeItem extends LOTRRenderLargeItem {
 	
-	public static Map<String, Float> sizeFolders = new HashMap<String, Float>();
-	
-	static {
-		sizeFolders.put("large", 2.0f);
-		sizeFolders.put("large2", 3.0f);
-	}
-	
+	private static Map<String, Float> sizeFolders = new HashMap<String, Float>();
 	private final Item theItem;
 	private final String folderName;
 	private final float largeIconScale;
-	private List<LOTRRenderLargeItem.ExtraLargeIconToken> extraTokens = new ArrayList<LOTRRenderLargeItem.ExtraLargeIconToken>();
 	private IIcon largeIcon;
+	private List<LOTRRenderLargeItem.ExtraLargeIconToken> extraTokens = new ArrayList<LOTRRenderLargeItem.ExtraLargeIconToken>();
+	
+	
+	private static ResourceLocation getLargeTexturePath(Item item, String folder) {
+		String itemIconString = item.getUnlocalizedName().substring("item.".length());
+		itemIconString = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, itemIconString);
+		//GameRegistry.UniqueIdentifier UID = GameRegistry.findUniqueIdentifierFor((Item) item);
+		
+		//if (UID == null) {
+	//		MarchOfEnts.logger.fatal("Tried registering a item which doesn't have a unique identifier.");
+	//	}
+		//String modID = StringUtils.isNullOrEmpty((String)UID.modId) ? "minecraft" : UID.modId;
+		//String modID = "marchofents";
+		return new ResourceLocation("marchofents:textures/items/" + folder + "/" + itemIconString + ".png");
+	}
+	
+	public static MOERenderLargeItem getRenderIfLarge(Item item) {
+		for (String folder : sizeFolders.keySet()) {
+			float iconScale = sizeFolders.get(folder).floatValue();
+			try {
+				ResourceLocation resLoc = MOERenderLargeItem.getLargeTexturePath(item, folder);
+				IResource res = Minecraft.getMinecraft().getResourceManager().getResource(resLoc);
+				if(res == null) continue;
+				return new MOERenderLargeItem(item, folder, iconScale);
+			}
+			catch (IOException iOEcxeption) {
+				
+			}
+		}
+		return null;
+	}
+	
 	
 	public MOERenderLargeItem(Item item, String dir, float f) {
 		super(item, dir, f);
@@ -48,87 +73,65 @@ public class MOERenderLargeItem extends LOTRRenderLargeItem {
 		this.largeIconScale = f;
 	}
 	
-	
-	private static ResourceLocation getLargeTexturePath(Item item, String folder) {
-		  String itemIconString = item.getUnlocalizedName().substring("item.".length());
-	        itemIconString = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, itemIconString);
-	        GameRegistry.UniqueIdentifier UID = GameRegistry.findUniqueIdentifierFor((Item)item);
-	        if (UID == null) {
-	            //MarchOfEnts.logger.fatal("Tried registering a item which doesn't have a unique identifier.");
-	        }
-	        String modID = StringUtils.isNullOrEmpty((String)UID.modId) ? "minecraft" : UID.modId;
-	        return new ResourceLocation(modID, "textures/items/" + folder + "/" + itemIconString + ".png");
-
-	}
-	
-	public static MOERenderLargeItem getRenderIfLarge(Item item) {
-		for(Entry<String, Float> folder : sizeFolders.entrySet()) {
-			float iconScale = folder.getValue();
-			try {
-				ResourceLocation resLoc = MOERenderLargeItem.getLargeTexturePath(item, folder.getKey());
-				IResource res = Minecraft.getMinecraft().getResourceManager().getResource(resLoc);
-				if (res == null) {
-					continue;
-				}
-				return new MOERenderLargeItem(item, folder.getKey(), iconScale);
-				
-			} catch (IOException ignored) {
-				
-			}
-			
-		}
-		return null;
-	}
-	
-	private void doTransformations() {
-		GL11.glTranslatef(-(largeIconScale - 1.0f) / 2.0f, -(largeIconScale - 1.0f) / 2.0f, 0.0f);
-		GL11.glScalef(largeIconScale, largeIconScale, 1.0f);
-	}
 	@Override
 	public LOTRRenderLargeItem.ExtraLargeIconToken extraIcon(String name) {
 		LOTRRenderLargeItem.ExtraLargeIconToken token = new LOTRRenderLargeItem.ExtraLargeIconToken(name);
 		this.extraTokens.add(token);
 		return token;
-	}
-
+		}
+	
+	
 	@Override
 	public void registerIcons(IIconRegister register) {
-		largeIcon = registerLargeIcon(register, null);
-		for (LOTRRenderLargeItem.ExtraLargeIconToken token : extraTokens) {
-			token.icon = registerLargeIcon(register, token.name);
+		this.largeIcon = this.registerLargeIcon(register, null);
+		for(LOTRRenderLargeItem.ExtraLargeIconToken token : this.extraTokens) {
+			token.icon = this.registerLargeIcon(register, token.name);
 		}
 	}
-
+	
+	
 	private IIcon registerLargeIcon(IIconRegister register, String extra) {
 		String itemName = this.theItem.getUnlocalizedName().substring("item.".length());
-		//String itemName = theItem.getUnlocalizedName().substring(5);
 		itemName = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, itemName);
-		//String modID = ("marchofents:");
-		GameRegistry.UniqueIdentifier UID = GameRegistry.findUniqueIdentifierFor(this.theItem);
-		String modID = (StringUtils.isNullOrEmpty(UID.modId) ? "minecraft" : UID.modId) + ":";
-		String path = modID + this.folderName + "/" + itemName;
-		//StringBuilder path = new StringBuilder().append(modID).append(folderName).append("/").append(itemName);
-		if (!StringUtils.isNullOrEmpty(extra)) {
-			//path.append("_").append(extra);
+		//GameRegistry.UniqueIdentifier UID = GameRegistry.findUniqueIdentifierFor((Item)this.theItem);
+		
+		//if(UID == null) {
+			//MarchOfEnts.logger.fatal("Tried registering a item which doesn't have a unique identifier.");
+			
+		//}
+		//String modID = (StringUtils.isNullOrEmpty((String)UID.modId) ? "minecraft" : UID.modId) + ":";
+		//String modID = "marchofents";
+		String path = "marchofents:" + this.folderName + "/" + itemName;
+		if(!StringUtils.isNullOrEmpty((String) extra)) {
 			path = path + "_" + extra;
 		}
-		
 		return register.registerIcon(path);
-		
+				
 	}
-
+	
+	private void doTransformations() {
+        GL11.glTranslatef((float)(-(this.largeIconScale - 1.0f) / 2.0f), (float)(-(this.largeIconScale - 1.0f) / 2.0f), (float)0.0f);
+        GL11.glScalef((float)this.largeIconScale, (float)this.largeIconScale, (float)1.0f);
+	}
+	
 	@Override
 	public void renderLargeItem() {
-		renderLargeItem(largeIcon);
+		this.renderLargeItem(this.largeIcon);
 	}
-
+	
 	private void renderLargeItem(IIcon icon) {
-		doTransformations();
+		this.doTransformations();
 		Minecraft.getMinecraft().getTextureManager().bindTexture(TextureMap.locationItemsTexture);
-		GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+		GL11.glColor4f((float)1.0f, (float)1.0f, (float)1.0f, (float)1.0f);
 		Tessellator tess = Tessellator.instance;
 		ItemRenderer.renderItemIn2D(tess, icon.getMaxU(), icon.getMinV(), icon.getMinU(), icon.getMaxV(), icon.getIconWidth(), icon.getIconHeight(), 0.0625f);
 	}
+	
+	static {
+		sizeFolders.put("large", Float.valueOf(2.0f));
+		sizeFolders.put("large2", Float.valueOf(3.0f));
+	}
+	
 	
 
 }

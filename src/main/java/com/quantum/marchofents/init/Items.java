@@ -61,7 +61,12 @@ public class Items {
 	public static Item fingolfinBoots;
 	public static Item elvenCirclet;
 	//tool materials
-	
+	public static void Init() {
+		Items.preInit();
+		Items.registerItems();
+		
+		
+	}
 	
 	public static void preInit()
 	{
@@ -95,8 +100,7 @@ public class Items {
 		fingolfinBoots = new ItemFingolfinArmor(LOTRMaterial.GONDOLIN, 3).setUnlocalizedName("ItemFingolfinBoots").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		elvenCirclet = new ItemElvenCirclet(LOTRMaterial.GALADHRIM, 0).setUnlocalizedName("ItemElvenCirclet").setTextureName("marchofents:wip").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		
-		registerItem(pikeLebennin, "pikeLebennin");
-		registerItem(longswordArnor, "longswordArnor");
+
 		
 		
 		//Item Register
@@ -128,13 +132,27 @@ public class Items {
 		GameRegistry.registerItem(fingolfinBoots, fingolfinBoots.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(elvenCirclet, elvenCirclet.getUnlocalizedName().substring(5));
 	}
+	private static void registerItems() {
+		Items.nameAndRegisterItem(pikeLebennin, "pikeLebennin");
+		Items.nameAndRegisterItem(longswordArnor, "longswordArnor");
+		
+	}
 	
-	public static void registerItem(Item item, String name) {
+	private static void nameAndRegisterItem(Item item, String name) {
 		String itemName = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, name);
 		item.setUnlocalizedName(itemName);
 		
 		item.setTextureName("marchofents:" + itemName);
-		GameRegistry.registerItem(item, itemName);
+		GameRegistry.registerItem((Item)item, (String)itemName);
+	}
+	
+	private static void nameAndRegisterItem(Item item, String name, String textureName) {
+		String itemName = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, name);
+		item.setUnlocalizedName(itemName);
+		
+		item.setTextureName(textureName);
+		GameRegistry.registerItem((Item)item, (String)itemName);
+		
 	}
 
 	public static void registerItemLOTR(Item item, String name) {

@@ -1,4 +1,4 @@
-item.longsword_arnor.name=Arnorian Longsword
+item.longswordArnor.name=Arnorian Longsword
 item.ItemNargothrondLongsword.name=Nargothrond Longsword
 item.ItemFeanorianSword.name=Feanorian Sword
 item.ItemGondolinBattleAxe.name=Gondolin BattleAxe
@@ -10,7 +10,7 @@ item.ItemDoriathSword.name=Doriath Sword
 item.ItemNauglamir.name=Nauglamir
 item.ItemNumenorScimitar.name= Numenorean Scimitar
 item.ItemNumenoreanSword.name=Numenorean Sword
-item.pike_lebennin.name=Lebennin Pike
+item.pikeLebennin.name=Lebennin Pike
 item.ItemLebenninSword.name=Lebennin Sword
 item.ItemLebenninHelm.name=Lebennin Helm
 item.ItemLebenninChestPlate.name=Lebennin Chestplate
