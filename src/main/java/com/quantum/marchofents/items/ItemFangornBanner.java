@@ -1,12 +1,10 @@
 package com.quantum.marchofents.items;
 
-import com.quantum.marchofents.util.MOECommander;
-
 import lotr.common.fac.LOTRFaction;
 import lotr.common.item.LOTRItemBanner;
+import com.quantum.marchofents.util.MOECommander;
 
 public class ItemFangornBanner {
-	
 	public static LOTRItemBanner.BannerType FANGORN;
 	
 	

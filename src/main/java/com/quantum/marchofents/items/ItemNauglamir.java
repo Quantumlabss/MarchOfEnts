@@ -28,10 +28,10 @@ public class ItemNauglamir extends Item{
 		
 		((EntityPlayer) entity).addPotionEffect(new PotionEffect(Potion.fireResistance.id, 100, 1));
 		
-		if(!LOTRLevelData.getData((EntityPlayer) entity).hasAchievement(Achievements.achievementNauglamir)) {
+		if(!LOTRLevelData.getData((EntityPlayer) entity).hasAchievement(Achievements.getNauglamir)) {
 			
-			LOTRLevelData.getData((EntityPlayer) entity).addAchievement(Achievements.achievementNauglamir);
-			Achievements.achievementNauglamir.broadcastEarning((EntityPlayer) entity);
+			LOTRLevelData.getData((EntityPlayer) entity).addAchievement(Achievements.getNauglamir);
+			Achievements.getNauglamir.broadcastEarning((EntityPlayer) entity);
 			
 		}
 	}

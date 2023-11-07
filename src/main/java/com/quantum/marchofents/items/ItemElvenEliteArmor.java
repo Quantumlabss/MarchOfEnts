@@ -1,5 +1,6 @@
 package com.quantum.marchofents.items;
 
+
 import lotr.common.item.LOTRItemArmor;
 import lotr.common.item.LOTRMaterial;
 import net.minecraft.entity.Entity;
@@ -7,8 +8,8 @@ import net.minecraft.item.ItemStack;
 
 public class ItemElvenEliteArmor extends LOTRItemArmor {
 
-	public ItemElvenEliteArmor(LOTRMaterial hIGH_ELVEN, int type) {
-		super(hIGH_ELVEN, type);
+	public ItemElvenEliteArmor(LOTRMaterial GALADHRIM, int type) {
+		super(GALADHRIM, type);
 		
 
 		// TODO Auto-generated constructor stub

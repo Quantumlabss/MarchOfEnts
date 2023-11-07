@@ -1,5 +1,6 @@
 package com.quantum.marchofents.items;
 
+
 import lotr.common.LOTRLore;
 import lotr.common.item.LOTRItemArmor;
 import lotr.common.item.LOTRMaterial;

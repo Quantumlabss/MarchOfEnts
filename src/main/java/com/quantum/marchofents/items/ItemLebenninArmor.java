@@ -7,8 +7,8 @@ import net.minecraft.item.ItemStack;
 
 public class ItemLebenninArmor extends LOTRItemArmor {
 
-	public ItemLebenninArmor(LOTRMaterial PELARGIR, int slotType, int renderIndex) {
-		super(PELARGIR, slotType);
+	public ItemLebenninArmor(LOTRMaterial GONDOR, int slotType) {
+		super(GONDOR, slotType);
 		// TODO Auto-generated constructor stub
 	}
 	

@@ -9,7 +9,7 @@ import com.quantum.marchofents.render.MOERenderManager;
 import com.quantum.marchofents.init.Items;
 
 
-
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
@@ -33,6 +33,7 @@ public class ClientProxy extends ServerProxy {
 		//MinecraftForgeClient.registerItemRenderer(Items.lebenninPike, new PikeRenderer(Items.lebenninPike, "marchofents:textures/items/large-3x/", 0));
 		//rendererManager = new MOERenderManager();
 		MOERenderManager.load();
+		//RenderingRegistry.registerEntityRenderingHandler(MOEEntityEnt.class, new LOTRRenderEnt());
 		//largeItemRenderer = new MOERenderLargeItem(Items.pikeLebennin, "marchofents:textures/items/large2/pike_lebennin.png", 3);
 		
 		

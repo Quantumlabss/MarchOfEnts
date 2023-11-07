@@ -1,12 +1,18 @@
 package com.quantum.marchofents;
 
 
+import com.quantum.marchofents.database.MOEMaterial;
+import com.quantum.marchofents.database.MOEMiniQuestFactory;
 import com.quantum.marchofents.database.MOEShields;
 import com.quantum.marchofents.init.Achievements;
+
 import com.quantum.marchofents.init.Items;
+
 import com.quantum.marchofents.items.ItemFangornBanner;
 import com.quantum.marchofents.proxy.ServerProxy;
+
 import com.quantum.marchofents.util.MOEModChecker;
+import com.quantum.marchofents.util.MOETickHandlerServer;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModContainer;
@@ -18,8 +24,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.stats.Achievement;
-import net.minecraftforge.common.AchievementPage;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -39,10 +44,14 @@ public class MarchOfEnts
 	
 	@SidedProxy(clientSide = "com.quantum.marchofents.proxy.ClientProxy", serverSide = "com.quantum.marchofents.ServerProxy")
 	public static ServerProxy proxy;
+	
 
 	
 	@Mod.Instance(value="marchofents")
 	public static MarchOfEnts instance;
+	
+	public static MOETickHandlerServer tickHandler;
+
 	
 	public static ModContainer getModContainer() {
 		return FMLCommonHandler.instance().findContainerFor(instance);
@@ -54,8 +63,10 @@ public class MarchOfEnts
 	{
 		//init items
 		Items.Init();
-		Achievements.Init();
+		
 		ItemFangornBanner.preInit();
+		
+		
 		
 		proxy.preInit(event);
 		
@@ -71,6 +82,11 @@ public class MarchOfEnts
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
+		tickHandler = new MOETickHandlerServer();
+		
+		Achievements.Init();
+		MOEMaterial.setupCraftingItems();
+		MOEMiniQuestFactory.onInit();
 		
 		MOEShields.onInit();
 		proxy.onInit(event);

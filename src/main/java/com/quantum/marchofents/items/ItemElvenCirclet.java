@@ -1,5 +1,6 @@
 package com.quantum.marchofents.items;
 
+
 import lotr.common.item.LOTRItemArmor;
 import lotr.common.item.LOTRMaterial;
 import net.minecraft.entity.Entity;
@@ -18,3 +19,4 @@ public class ItemElvenCirclet extends LOTRItemArmor {
 	
 
 }
+ 
