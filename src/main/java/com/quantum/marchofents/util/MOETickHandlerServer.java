@@ -1,6 +1,7 @@
 package com.quantum.marchofents.util;
 
 import com.quantum.marchofents.init.Achievements;
+import com.quantum.marchofents.init.Items;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -20,11 +21,13 @@ public class MOETickHandlerServer {
 	@SubscribeEvent
 	public void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		EntityPlayer player = event.player;
+		//player.inventory = event.player.inventory;
 		World world = player.worldObj;
 		if (world.isRemote || !player.isEntityAlive() || event.phase != TickEvent.Phase.END) {
 			return;
 		}
 		Achievements.runAchievementCheck(player);
 	}
+	
 
 }

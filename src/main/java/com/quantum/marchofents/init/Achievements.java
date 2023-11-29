@@ -40,6 +40,16 @@ public class Achievements {
 	public static LOTRAchievement wearFullEntish;
 	public static LOTRAchievement getEntishBranch;
 	public static LOTRAchievement getTreebeardHand;
+	public static LOTRAchievement getNargothrondBattleaxe;
+	public static LOTRAchievement getNumenoreanSword;
+	public static LOTRAchievement wearLebenninPlateSet;
+	public static LOTRAchievement wearLossarnachPlateSet;
+	public static LOTRAchievement craftArnorLongsword;
+	public static LOTRAchievement getGondolinBattleaxe;
+	public static LOTRAchievement wearSauronSet;
+	public static LOTRAchievement getFeanorianSword;
+	public static LOTRAchievement getDoriathSword;
+	public static LOTRAchievement wearGondorCrown;
 	//public static EntityPlayer entity;
 	
 	
@@ -53,12 +63,21 @@ public class Achievements {
 		wearFullElvenElite = createArmorAchievement(Category.LOTHLORIEN, 400, Items.elvenEliteChestplate, "wearFullElvenElite").createTitle();
 		wearFullFingolfin = createArmorAchievement(Category.LINDON, 500, Items.fingolfinChestplate, "wearFullFingolfin").createTitle();
 		wearElvenCirclet = createArmorAchievement(Category.LOTHLORIEN, 600, Items.elvenCirclet, "wearElvenCirclet").createTitle();
-		wearDragonHelm = createArmorAchievement(Category.LINDON, 700, Items.dragonHelm, "wearDragonHelm").createTitle();
+		wearDragonHelm = createArmorAchievement(Category.GONDOR, 700, Items.dragonHelm, "wearDragonHelm").createTitle();
 		doMiniQuestFangorn = new LOTRAchievement(Category.FANGORN, 20, LOTRMod.redBook, "doMiniQuestFangorn").setRequiresAlly(LOTRFaction.FANGORN);
 		wearFullEntish = createArmorAchievement(Category.FANGORN, 21, Items.entishChestplate, "wearFullEntish").createTitle();
 		wearFullFangorn = createArmorAchievement(Category.FANGORN, 22, Items.fangornChestplate, "wearFullFangorn").createTitle();
 		getEntishBranch = new LOTRAchievement(Category.FANGORN, 23, Items.entishBranch, "getEntishBranch").createTitle();
 		getTreebeardHand = new LOTRAchievement(Category.FANGORN, 24, Items.handOfTreebeard, "getTreebeardHand").createTitle();
+		getNargothrondBattleaxe = new LOTRAchievement(Category.LOTHLORIEN, 601, Items.nargothrondBattleAxe, "getNargothrondBattleaxe").createTitle();
+		getNumenoreanSword = new LOTRAchievement(Category.GONDOR, 51, Items.numenoreanSword, "getNumenoreanSword").createTitle();
+		//wearLebenninPlateSet = createArmorAchievement(Category.GONDOR, 52, Items)
+		//lossarnach achievement
+		craftArnorLongsword = new LOTRAchievement(Category.ERIADOR, 100, Items.longswordArnor, "craftArnorLongsword").createTitle();
+		getGondolinBattleaxe = new LOTRAchievement(Category.LINDON, 800, Items.gondolinBattleAxe, "getGondolinBattleaxe").createTitle();
+		//sauronset
+		getFeanorianSword = new LOTRAchievement(Category.LINDON, 850, Items.feanorianSword, "getFeanorianSword").createTitle();
+		getDoriathSword = new LOTRAchievement(Category.LOTHLORIEN, 650, Items.doriathSword, "getDoriathSword").createTitle();
 	}
 	
     private static LOTRAchievement createArmorAchievement(final LOTRAchievement.Category category, final int id, final Item item, final String name) {
