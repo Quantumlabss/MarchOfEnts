@@ -35,7 +35,7 @@ item.entish_leggings.name=Entish Leggings
 item.entish_boots.name=Entish Boots
 item.entish_branch.name=Entish Branch
 item.hand_of_treebeard.name=Hand Of Treebeard
-
+item.sauron_helm.name=Sauron Helm
 item.dragon_helm.name=The Dragon Helm Of Dor-Lomin
 
 lotr.achievement.getNauglamir.title=Ruin Of Thingol
@@ -74,7 +74,8 @@ lotr.achievement.getFeanorianSword.title=Oathsworn
 lotr.achievement.getFeanorianSword.desc=Equip a Feanorian Longsword
 lotr.achievement.getDoriathSword.title=Treasures Of Menegroth
 lotr.achievement.getDoriathSword.desc=Equip A Doriath Longsword
-
+lotr.achievement.wearLossarnachPlateSet.title=lossarnachplateset
+lotr.achievement.wearLossarnachPlateSet.desc=lossarnachplateset
 
 item.lotr:banner.fangorn.name=Banner Of Fangorn
 lotr.shields.ALIGNMENT_FANGORN.desc=Reward for reaching 1000+ reputation with the Ents

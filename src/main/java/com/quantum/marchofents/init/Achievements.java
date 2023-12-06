@@ -50,6 +50,7 @@ public class Achievements {
 	public static LOTRAchievement getFeanorianSword;
 	public static LOTRAchievement getDoriathSword;
 	public static LOTRAchievement wearGondorCrown;
+
 	//public static EntityPlayer entity;
 	
 	
@@ -71,8 +72,8 @@ public class Achievements {
 		getTreebeardHand = new LOTRAchievement(Category.FANGORN, 24, Items.handOfTreebeard, "getTreebeardHand").createTitle();
 		getNargothrondBattleaxe = new LOTRAchievement(Category.LOTHLORIEN, 601, Items.nargothrondBattleAxe, "getNargothrondBattleaxe").createTitle();
 		getNumenoreanSword = new LOTRAchievement(Category.GONDOR, 51, Items.numenoreanSword, "getNumenoreanSword").createTitle();
-		//wearLebenninPlateSet = createArmorAchievement(Category.GONDOR, 52, Items)
-		//lossarnach achievement
+		
+		wearLossarnachPlateSet = createArmorAchievement(Category.GONDOR, 52, Items.lossarnachChestplate, "wearLossarnachPlateSet").createTitle();
 		craftArnorLongsword = new LOTRAchievement(Category.ERIADOR, 100, Items.longswordArnor, "craftArnorLongsword").createTitle();
 		getGondolinBattleaxe = new LOTRAchievement(Category.LINDON, 800, Items.gondolinBattleAxe, "getGondolinBattleaxe").createTitle();
 		//sauronset

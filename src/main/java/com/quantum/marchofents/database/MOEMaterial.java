@@ -24,6 +24,8 @@ public class MOEMaterial {
 	public static LOTRMaterial DRAGON_HELM;
 	public static LOTRMaterial FANGORN;
 	public static LOTRMaterial ENTISH;
+	public static LOTRMaterial SAURON;
+	public static LOTRMaterial LOSSARNACH;
 	private static boolean setup;
 	private static Constructor<LOTRMaterial> constructor;
     private static Method setUses;
@@ -165,6 +167,8 @@ public class MOEMaterial {
     	MOEMaterial.ELVEN_CIRCLET = newLOTRMaterial("ELVEN_CIRCLET", 400, 2.5f, 0.6f, 2.0f, 6, 10, null);
     	MOEMaterial.FANGORN = newLOTRMaterial("FANGORN", 450, 3.0f, 0.5f, 7.0f, 2, 15, null);
     	MOEMaterial.ENTISH = newLOTRMaterial("ENTISH", 450, 0.0f, 0.5f, 0.0f, 0, 15, null);
+    	MOEMaterial.SAURON = newLOTRMaterial("SAURON", 700, 3.0f, 0.6f, 7.0f, 2, 15, null);
+    	MOEMaterial.LOSSARNACH = newLOTRMaterial("LOSSARNACH", 456, 0.0f, 0.5f, 0.0f, 0, 15, null);
     	MOEMaterial.setup = false;
     	}
     

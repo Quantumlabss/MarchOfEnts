@@ -5,10 +5,17 @@ import com.quantum.marchofents.MarchOfEnts;
 import com.quantum.marchofents.database.MOEMaterial;
 import com.quantum.marchofents.items.ItemElvenCirclet;
 import com.quantum.marchofents.items.ItemElvenEliteArmor;
+import com.quantum.marchofents.items.ItemFeanorianSword;
 import com.quantum.marchofents.items.ItemFingolfinArmor;
+import com.quantum.marchofents.items.ItemGondolinBattleAxe;
 import com.quantum.marchofents.items.ItemLebenninArmor;
 import com.quantum.marchofents.items.ItemLebenninHelmet;
+import com.quantum.marchofents.items.ItemMithrilSmithingHammer;
+import com.quantum.marchofents.items.ItemNargothrondBattleAxe;
 import com.quantum.marchofents.items.ItemNauglamir;
+import com.quantum.marchofents.items.ItemNumenoreanSword;
+import com.quantum.marchofents.items.ItemSauronHelm;
+import com.quantum.marchofents.items.ItemDoriathSword;
 import com.quantum.marchofents.items.ItemDragonHelm;
 import com.quantum.marchofents.items.MOEItemArmor;
 
@@ -23,7 +30,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class Items {
+public class MOEItems {
 	
 	
 	//items
@@ -65,6 +72,15 @@ public class Items {
 	public static Item entishChestplate;
 	public static Item entishLeggings;
 	public static Item entishBoots;
+	public static Item sauronHelm;
+	public static Item sauronChestplate;
+	public static Item sauronLeggings;
+	public static Item sauronBoots;
+	public static Item lossarnachHelm;
+	public static Item lossarnachChestplate;
+	public static Item lossarnachLeggings;
+	public static Item lossarnachBoots;
+	
 	
 	//tool materials
 	public static void Init() {
@@ -80,15 +96,15 @@ public class Items {
 		//item init
 		longswordArnor = new LOTRItemSword(LOTRMaterial.ARNOR);
 		numenoreanScimitar = new LOTRItemSword(LOTRMaterial.BLACK_NUMENOREAN);
-		numenoreanSword = new LOTRItemSword(LOTRMaterial.BLACK_NUMENOREAN);
+		numenoreanSword = new ItemNumenoreanSword(LOTRMaterial.BLACK_NUMENOREAN);
 		pikeLebennin = new LOTRItemPike(LOTRMaterial.GONDOR);
 		lebenninSword = new LOTRItemSword(LOTRMaterial.GONDOR);
-		nargothrondBattleAxe = new LOTRItemBattleaxe(LOTRMaterial.HIGH_ELVEN);
+		nargothrondBattleAxe = new ItemNargothrondBattleAxe(LOTRMaterial.HIGH_ELVEN);
 		nargothrondLongsword = new LOTRItemSword(LOTRMaterial.HIGH_ELVEN).setIsElvenBlade();
-		mithrilSmithingHammer = new LOTRItemHammer(LOTRMaterial.MITHRIL);
-		doriathSword = new LOTRItemSword(LOTRMaterial.HIGH_ELVEN).setIsElvenBlade();
-		feanorianSword = new LOTRItemSword(LOTRMaterial.HIGH_ELVEN).setIsElvenBlade();
-		gondolinBattleAxe = new LOTRItemBattleaxe(LOTRMaterial.GONDOLIN);
+		mithrilSmithingHammer = new ItemMithrilSmithingHammer(LOTRMaterial.MITHRIL);
+		doriathSword = new ItemDoriathSword(LOTRMaterial.HIGH_ELVEN).setIsElvenBlade();
+		feanorianSword = new ItemFeanorianSword(LOTRMaterial.HIGH_ELVEN).setIsElvenBlade();
+		gondolinBattleAxe = new ItemGondolinBattleAxe(LOTRMaterial.GONDOLIN);
 		gondolinWarHammer = new LOTRItemHammer(LOTRMaterial.GONDOLIN);
 		entishBranch = new LOTRItemHammer(MOEMaterial.ENTISH);
 		handOfTreebeard = new LOTRItemHammer(LOTRMaterial.MALLORN_MACE);
@@ -96,6 +112,7 @@ public class Items {
 		
 		//armor item
 		lebenninHelmet = new ItemLebenninHelmet();
+		
 		lebenninChestplate = new MOEItemArmor(MOEMaterial.LEBENNIN, 1);
 		lebenninLeggings = new MOEItemArmor(MOEMaterial.LEBENNIN, 2);
 		lebenninBoots = new MOEItemArmor(MOEMaterial.LEBENNIN, 3);
@@ -116,7 +133,16 @@ public class Items {
 		entishChestplate = new MOEItemArmor(MOEMaterial.ENTISH, 1);
 		entishLeggings = new MOEItemArmor(MOEMaterial.ENTISH, 2);
 		entishBoots = new MOEItemArmor(MOEMaterial.ENTISH, 3);
+		//sauronHelm = new MOEItemArmor(MOEMaterial.SAURON, 0);
+		lossarnachHelm = new MOEItemArmor(MOEMaterial.LOSSARNACH, 0);
+		lossarnachChestplate = new MOEItemArmor(MOEMaterial.LOSSARNACH, 1);
+		lossarnachLeggings = new MOEItemArmor(MOEMaterial.LOSSARNACH, 2);
+		lossarnachBoots = new MOEItemArmor(MOEMaterial.LOSSARNACH, 3);
+		
+		sauronHelm = new ItemSauronHelm();
+		
 		dragonHelm = new ItemDragonHelm();
+		
 		
 
 		
@@ -128,21 +154,21 @@ public class Items {
 		
 	}
 	private static void registerItems() {
-		Items.nameAndRegisterItem(pikeLebennin, "pikeLebennin");
-		Items.nameAndRegisterItem(longswordArnor, "longswordArnor");
-		Items.nameAndRegisterItem(lebenninSword, "lebenninSword");
-		Items.nameAndRegisterItem(numenoreanScimitar, "numenoreanScimitar");
-		Items.nameAndRegisterItem(numenoreanSword, "numenoreanSword");
-		Items.nameAndRegisterItem(nargothrondBattleAxe, "nargothrondBattleaxe");
-		Items.nameAndRegisterItem(nargothrondLongsword, "nargothrondLongsword");
-		Items.nameAndRegisterItem(mithrilSmithingHammer, "mithrilSmithingHammer");
-		Items.nameAndRegisterItem(doriathSword, "doriathSword");
-		Items.nameAndRegisterItem(feanorianSword, "feanorianSword");
-		Items.nameAndRegisterItem(gondolinBattleAxe, "gondolinBattleaxe");
-		Items.nameAndRegisterItem(gondolinWarHammer, "gondolinWarhammer");
-		Items.nameAndRegisterItem(lebenninHelmet, "lebenninHelmet");
-		Items.nameAndRegisterItem(lebenninChestplate, "lebenninChestplate");
-		Items.nameAndRegisterItem(lebenninLeggings, "lebenninLeggings");
+		MOEItems.nameAndRegisterItem(pikeLebennin, "pikeLebennin");
+		MOEItemss.nameAndRegisterItem(longswordArnor, "longswordArnor");
+		MOEItems.nameAndRegisterItem(lebenninSword, "lebenninSword");
+		MOEItems.nameAndRegisterItem(numenoreanScimitar, "numenoreanScimitar");
+		MOEItems.nameAndRegisterItem(numenoreanSword, "numenoreanSword");
+		MOEItems.nameAndRegisterItem(nargothrondBattleAxe, "nargothrondBattleaxe");
+		MOEItems.nameAndRegisterItem(nargothrondLongsword, "nargothrondLongsword");
+		MOEItems.nameAndRegisterItem(mithrilSmithingHammer, "mithrilSmithingHammer");
+		MOEItems.nameAndRegisterItem(doriathSword, "doriathSword");
+		MOEItems.nameAndRegisterItem(feanorianSword, "feanorianSword");
+		MOEItems.nameAndRegisterItem(gondolinBattleAxe, "gondolinBattleaxe");
+		MOEItems.nameAndRegisterItem(gondolinWarHammer, "gondolinWarhammer");
+		MOEItems.nameAndRegisterItem(lebenninHelmet, "lebenninHelmet");
+		MOEItems.nameAndRegisterItem(lebenninChestplate, "lebenninChestplate");
+		MOEItems.nameAndRegisterItem(lebenninLeggings, "lebenninLeggings");
 		Items.nameAndRegisterItem(lebenninBoots, "lebenninBoots");
 		Items.nameAndRegisterItem(elvenEliteHelm, "elvenEliteHelm");
 		Items.nameAndRegisterItem(elvenEliteChestplate, "elvenEliteChestplate");
@@ -164,6 +190,12 @@ public class Items {
 		Items.nameAndRegisterItem(entishBoots, "entishBoots");
 		Items.nameAndRegisterItem(entishBranch, "entishBranch");
 		Items.nameAndRegisterItem(handOfTreebeard, "handOfTreebeard");
+		Items.nameAndRegisterItem(lossarnachHelm, "lossarnachHelm");
+		Items.nameAndRegisterItem(lossarnachChestplate, "lossarnachChestplate");
+		Items.nameAndRegisterItem(lossarnachLeggings, "lossarnachLeggings");
+		Items.nameAndRegisterItem(lossarnachBoots, "lossarnachBoots");
+		Items.nameAndRegisterItem(sauronHelm, "sauronHelm");
+
 
 		
 	}
