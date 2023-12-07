@@ -14,6 +14,7 @@ import com.quantum.marchofents.items.ItemMithrilSmithingHammer;
 import com.quantum.marchofents.items.ItemNargothrondBattleAxe;
 import com.quantum.marchofents.items.ItemNauglamir;
 import com.quantum.marchofents.items.ItemNumenoreanSword;
+import com.quantum.marchofents.items.ItemSauronChestplate;
 import com.quantum.marchofents.items.ItemSauronHelm;
 import com.quantum.marchofents.items.ItemDoriathSword;
 import com.quantum.marchofents.items.ItemDragonHelm;
@@ -140,6 +141,7 @@ public class MOEItems {
 		lossarnachBoots = new MOEItemArmor(MOEMaterial.LOSSARNACH, 3);
 		
 		sauronHelm = new ItemSauronHelm();
+		sauronChestplate = new ItemSauronChestplate();
 		
 		dragonHelm = new ItemDragonHelm();
 		
@@ -195,6 +197,7 @@ public class MOEItems {
 		MOEItems.nameAndRegisterItem(lossarnachLeggings, "lossarnachLeggings");
 		MOEItems.nameAndRegisterItem(lossarnachBoots, "lossarnachBoots");
 		MOEItems.nameAndRegisterItem(sauronHelm, "sauronHelm");
+		MOEItems.nameAndRegisterItem(sauronChestplate, "sauronChestplate");
 
 
 		

@@ -19,11 +19,13 @@ public class MOEModelSauronHelm extends LOTRModelBiped {
 	}
 
 	public MOEModelSauronHelm(final float f) {
-		textureWidth = 64;
-		textureHeight = 32;
+		super(f);
+		//textureWidth = 64;
+		//textureHeight = 32;
 
-		head = new ModelRenderer(this);
-		head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		//head = new ModelRenderer(this);
+		(head = new ModelRenderer((ModelBase)this, 0, 0)).setRotationPoint(0.0f, 0.0f, 0.0f);
+		//head.setRotationPoint(0.0F, 0.0F, 0.0F);
 		head.cubeList.add(new ModelBox(head, 0, 0, -4.0F, -7.0F, -4.0F, 8, 8, 8, 0.75F));
 		head.cubeList.add(new ModelBox(head, 32, 0, -4.0F, -7.0F, -4.0F, 8, 8, 8, 1.0F));
 		head.cubeList.add(new ModelBox(head, 0, 0, -1.0F, -16.75F, -4.25F, 2, 9, 2, 0.0F));
@@ -39,9 +41,9 @@ public class MOEModelSauronHelm extends LOTRModelBiped {
 		head.render(f5);
 	}
 
-	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
-	}
+	 @Override
+	    public void setRotationAngles(final float f, final float f1, final float f2, final float f3, final float f4, final float f5, final Entity entity) {
+	        super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+
+	    }
 }
