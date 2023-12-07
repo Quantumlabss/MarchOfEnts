@@ -58,27 +58,27 @@ public class Achievements {
 	
 	public static void Init() {
 		
-		getNauglamir = new LOTRAchievement(Category.LINDON, 100, Items.nauglamir, "getNauglamir").createTitle();
-		getMithrilSmithingHammer = new LOTRAchievement(Category.EREGION, 200, Items.mithrilSmithingHammer, "getMithrilSmithingHammer").createTitle();		
-		wearFullLebennin = createArmorAchievement(Category.GONDOR, 50, Items.lebenninChestplate, "wearFullLebennin").createTitle();
-		wearFullElvenElite = createArmorAchievement(Category.LOTHLORIEN, 400, Items.elvenEliteChestplate, "wearFullElvenElite").createTitle();
-		wearFullFingolfin = createArmorAchievement(Category.LINDON, 500, Items.fingolfinChestplate, "wearFullFingolfin").createTitle();
-		wearElvenCirclet = createArmorAchievement(Category.LOTHLORIEN, 600, Items.elvenCirclet, "wearElvenCirclet").createTitle();
-		wearDragonHelm = createArmorAchievement(Category.GONDOR, 700, Items.dragonHelm, "wearDragonHelm").createTitle();
+		getNauglamir = new LOTRAchievement(Category.LINDON, 100, MOEItems.nauglamir, "getNauglamir").createTitle();
+		getMithrilSmithingHammer = new LOTRAchievement(Category.EREGION, 200, MOEItems.mithrilSmithingHammer, "getMithrilSmithingHammer").createTitle();		
+		wearFullLebennin = createArmorAchievement(Category.GONDOR, 50, MOEItems.lebenninChestplate, "wearFullLebennin").createTitle();
+		wearFullElvenElite = createArmorAchievement(Category.LOTHLORIEN, 400, MOEItems.elvenEliteChestplate, "wearFullElvenElite").createTitle();
+		wearFullFingolfin = createArmorAchievement(Category.LINDON, 500, MOEItems.fingolfinChestplate, "wearFullFingolfin").createTitle();
+		wearElvenCirclet = createArmorAchievement(Category.LOTHLORIEN, 600, MOEItems.elvenCirclet, "wearElvenCirclet").createTitle();
+		wearDragonHelm = createArmorAchievement(Category.GONDOR, 700, MOEItems.dragonHelm, "wearDragonHelm").createTitle();
 		doMiniQuestFangorn = new LOTRAchievement(Category.FANGORN, 20, LOTRMod.redBook, "doMiniQuestFangorn").setRequiresAlly(LOTRFaction.FANGORN);
-		wearFullEntish = createArmorAchievement(Category.FANGORN, 21, Items.entishChestplate, "wearFullEntish").createTitle();
-		wearFullFangorn = createArmorAchievement(Category.FANGORN, 22, Items.fangornChestplate, "wearFullFangorn").createTitle();
-		getEntishBranch = new LOTRAchievement(Category.FANGORN, 23, Items.entishBranch, "getEntishBranch").createTitle();
-		getTreebeardHand = new LOTRAchievement(Category.FANGORN, 24, Items.handOfTreebeard, "getTreebeardHand").createTitle();
-		getNargothrondBattleaxe = new LOTRAchievement(Category.LOTHLORIEN, 601, Items.nargothrondBattleAxe, "getNargothrondBattleaxe").createTitle();
-		getNumenoreanSword = new LOTRAchievement(Category.GONDOR, 51, Items.numenoreanSword, "getNumenoreanSword").createTitle();
+		wearFullEntish = createArmorAchievement(Category.FANGORN, 21, MOEItems.entishChestplate, "wearFullEntish").createTitle();
+		wearFullFangorn = createArmorAchievement(Category.FANGORN, 22, MOEItems.fangornChestplate, "wearFullFangorn").createTitle();
+		getEntishBranch = new LOTRAchievement(Category.FANGORN, 23, MOEItems.entishBranch, "getEntishBranch").createTitle();
+		getTreebeardHand = new LOTRAchievement(Category.FANGORN, 24, MOEItems.handOfTreebeard, "getTreebeardHand").createTitle();
+		getNargothrondBattleaxe = new LOTRAchievement(Category.LOTHLORIEN, 601, MOEItems.nargothrondBattleAxe, "getNargothrondBattleaxe").createTitle();
+		getNumenoreanSword = new LOTRAchievement(Category.GONDOR, 51, MOEItems.numenoreanSword, "getNumenoreanSword").createTitle();
 		
-		wearLossarnachPlateSet = createArmorAchievement(Category.GONDOR, 52, Items.lossarnachChestplate, "wearLossarnachPlateSet").createTitle();
-		craftArnorLongsword = new LOTRAchievement(Category.ERIADOR, 100, Items.longswordArnor, "craftArnorLongsword").createTitle();
-		getGondolinBattleaxe = new LOTRAchievement(Category.LINDON, 800, Items.gondolinBattleAxe, "getGondolinBattleaxe").createTitle();
+		wearLossarnachPlateSet = createArmorAchievement(Category.GONDOR, 52, MOEItems.lossarnachChestplate, "wearLossarnachPlateSet").createTitle();
+		craftArnorLongsword = new LOTRAchievement(Category.ERIADOR, 100, MOEItems.longswordArnor, "craftArnorLongsword").createTitle();
+		getGondolinBattleaxe = new LOTRAchievement(Category.LINDON, 800, MOEItems.gondolinBattleAxe, "getGondolinBattleaxe").createTitle();
 		//sauronset
-		getFeanorianSword = new LOTRAchievement(Category.LINDON, 850, Items.feanorianSword, "getFeanorianSword").createTitle();
-		getDoriathSword = new LOTRAchievement(Category.LOTHLORIEN, 650, Items.doriathSword, "getDoriathSword").createTitle();
+		getFeanorianSword = new LOTRAchievement(Category.LINDON, 850, MOEItems.feanorianSword, "getFeanorianSword").createTitle();
+		getDoriathSword = new LOTRAchievement(Category.LOTHLORIEN, 650, MOEItems.doriathSword, "getDoriathSword").createTitle();
 	}
 	
     private static LOTRAchievement createArmorAchievement(final LOTRAchievement.Category category, final int id, final Item item, final String name) {

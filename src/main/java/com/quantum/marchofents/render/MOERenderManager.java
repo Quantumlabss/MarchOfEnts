@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.lwjgl.opengl.GL11;
 
-import com.quantum.marchofents.init.Items;
+import com.quantum.marchofents.init.MOEItems;
 
 
 import com.quantum.marchofents.util.MOECommander;

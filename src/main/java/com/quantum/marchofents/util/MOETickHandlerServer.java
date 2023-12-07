@@ -1,7 +1,7 @@
 package com.quantum.marchofents.util;
 
 import com.quantum.marchofents.init.Achievements;
-import com.quantum.marchofents.init.Items;
+import com.quantum.marchofents.init.MOEItems;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;

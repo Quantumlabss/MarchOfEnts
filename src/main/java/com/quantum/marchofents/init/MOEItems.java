@@ -84,8 +84,8 @@ public class MOEItems {
 	
 	//tool materials
 	public static void Init() {
-		Items.preInit();
-		Items.registerItems();
+		MOEItems.preInit();
+		MOEItems.registerItems();
 		
 		
 	}
@@ -155,7 +155,7 @@ public class MOEItems {
 	}
 	private static void registerItems() {
 		MOEItems.nameAndRegisterItem(pikeLebennin, "pikeLebennin");
-		MOEItemss.nameAndRegisterItem(longswordArnor, "longswordArnor");
+		MOEItems.nameAndRegisterItem(longswordArnor, "longswordArnor");
 		MOEItems.nameAndRegisterItem(lebenninSword, "lebenninSword");
 		MOEItems.nameAndRegisterItem(numenoreanScimitar, "numenoreanScimitar");
 		MOEItems.nameAndRegisterItem(numenoreanSword, "numenoreanSword");
@@ -169,32 +169,32 @@ public class MOEItems {
 		MOEItems.nameAndRegisterItem(lebenninHelmet, "lebenninHelmet");
 		MOEItems.nameAndRegisterItem(lebenninChestplate, "lebenninChestplate");
 		MOEItems.nameAndRegisterItem(lebenninLeggings, "lebenninLeggings");
-		Items.nameAndRegisterItem(lebenninBoots, "lebenninBoots");
-		Items.nameAndRegisterItem(elvenEliteHelm, "elvenEliteHelm");
-		Items.nameAndRegisterItem(elvenEliteChestplate, "elvenEliteChestplate");
-		Items.nameAndRegisterItem(elvenEliteLeggings, "elvenEliteLeggings");
-		Items.nameAndRegisterItem(elvenEliteBoots, "elvenEliteBoots");
-		Items.nameAndRegisterItem(fingolfinHelm, "fingolfinHelm");
-		Items.nameAndRegisterItem(fingolfinChestplate, "fingolfinChestplate");
-		Items.nameAndRegisterItem(fingolfinLeggings, "fingolfinLeggings");
-		Items.nameAndRegisterItem(fingolfinBoots, "fingolfinBoots");
-		Items.nameAndRegisterItem(elvenCirclet, "elvenCirclet");
-		Items.nameAndRegisterItem(dragonHelm, "dragonHelm");
-		Items.nameAndRegisterItem(fangornHelm, "fangornHelm");
-		Items.nameAndRegisterItem(fangornChestplate, "fangornChestplate");
-		Items.nameAndRegisterItem(fangornLeggings, "fangornLeggings");
-		Items.nameAndRegisterItem(fangornBoots, "fangornBoots");
-		Items.nameAndRegisterItem(entishHelmet, "entishHelmet");
-		Items.nameAndRegisterItem(entishChestplate, "entishChestplate");
-		Items.nameAndRegisterItem(entishLeggings, "entishLeggings");
-		Items.nameAndRegisterItem(entishBoots, "entishBoots");
-		Items.nameAndRegisterItem(entishBranch, "entishBranch");
-		Items.nameAndRegisterItem(handOfTreebeard, "handOfTreebeard");
-		Items.nameAndRegisterItem(lossarnachHelm, "lossarnachHelm");
-		Items.nameAndRegisterItem(lossarnachChestplate, "lossarnachChestplate");
-		Items.nameAndRegisterItem(lossarnachLeggings, "lossarnachLeggings");
-		Items.nameAndRegisterItem(lossarnachBoots, "lossarnachBoots");
-		Items.nameAndRegisterItem(sauronHelm, "sauronHelm");
+		MOEItems.nameAndRegisterItem(lebenninBoots, "lebenninBoots");
+		MOEItems.nameAndRegisterItem(elvenEliteHelm, "elvenEliteHelm");
+		MOEItems.nameAndRegisterItem(elvenEliteChestplate, "elvenEliteChestplate");
+		MOEItems.nameAndRegisterItem(elvenEliteLeggings, "elvenEliteLeggings");
+		MOEItems.nameAndRegisterItem(elvenEliteBoots, "elvenEliteBoots");
+		MOEItems.nameAndRegisterItem(fingolfinHelm, "fingolfinHelm");
+		MOEItems.nameAndRegisterItem(fingolfinChestplate, "fingolfinChestplate");
+		MOEItems.nameAndRegisterItem(fingolfinLeggings, "fingolfinLeggings");
+		MOEItems.nameAndRegisterItem(fingolfinBoots, "fingolfinBoots");
+		MOEItems.nameAndRegisterItem(elvenCirclet, "elvenCirclet");
+		MOEItems.nameAndRegisterItem(dragonHelm, "dragonHelm");
+		MOEItems.nameAndRegisterItem(fangornHelm, "fangornHelm");
+		MOEItems.nameAndRegisterItem(fangornChestplate, "fangornChestplate");
+		MOEItems.nameAndRegisterItem(fangornLeggings, "fangornLeggings");
+		MOEItems.nameAndRegisterItem(fangornBoots, "fangornBoots");
+		MOEItems.nameAndRegisterItem(entishHelmet, "entishHelmet");
+		MOEItems.nameAndRegisterItem(entishChestplate, "entishChestplate");
+		MOEItems.nameAndRegisterItem(entishLeggings, "entishLeggings");
+		MOEItems.nameAndRegisterItem(entishBoots, "entishBoots");
+		MOEItems.nameAndRegisterItem(entishBranch, "entishBranch");
+		MOEItems.nameAndRegisterItem(handOfTreebeard, "handOfTreebeard");
+		MOEItems.nameAndRegisterItem(lossarnachHelm, "lossarnachHelm");
+		MOEItems.nameAndRegisterItem(lossarnachChestplate, "lossarnachChestplate");
+		MOEItems.nameAndRegisterItem(lossarnachLeggings, "lossarnachLeggings");
+		MOEItems.nameAndRegisterItem(lossarnachBoots, "lossarnachBoots");
+		MOEItems.nameAndRegisterItem(sauronHelm, "sauronHelm");
 
 
 		

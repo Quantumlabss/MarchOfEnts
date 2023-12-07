@@ -1,100 +1,86 @@
-[10:19:41] [main/INFO]: Setting user: Player510
-[10:19:43] [Client thread/INFO]: LWJGL Version: 2.9.1
-[10:19:45] [Client thread/ERROR]: Couldn't initialize twitch stream
-[10:19:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:The Lord of the Rings Mod, FMLFileResourcePack:March Of The Ents
-[10:19:55] [Client thread/INFO]: LOTR: Found logger
-[10:19:56] [Client thread/INFO]: LOTR: Registered 144 packet types
-[10:20:01] [Sound Library Loader/INFO]: Sound engine started
-[10:20:05] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[10:20:06] [Client thread/INFO]: Created: 1024x1024 textures/items-atlas
-[10:20:10] [Client thread/INFO]: LOTRLore: Category ruins has loaded 13 lore texts, of which 5 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category shire has loaded 20 lore texts, of which 11 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category bree has loaded 14 lore texts, of which 12 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category blue_mountains has loaded 8 lore texts, of which 5 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category lindon has loaded 11 lore texts, of which 10 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category eriador has loaded 14 lore texts, of which 14 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category rivendell has loaded 24 lore texts, of which 22 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category eregion has loaded 7 lore texts, of which 6 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category dunland has loaded 6 lore texts, of which 5 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category gundabad has loaded 4 lore texts, of which 4 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category angmar has loaded 5 lore texts, of which 5 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category woodland_realm has loaded 4 lore texts, of which 4 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category dol_guldur has loaded 4 lore texts, of which 4 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category dale has loaded 14 lore texts, of which 12 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category durins_folk has loaded 13 lore texts, of which 6 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category lothlorien has loaded 10 lore texts, of which 10 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category rohan has loaded 5 lore texts, of which 2 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category isengard has loaded 4 lore texts, of which 3 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category gondor has loaded 21 lore texts, of which 16 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category mordor has loaded 6 lore texts, of which 6 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category dorwinion has loaded 7 lore texts, of which 5 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category rhun has loaded 9 lore texts, of which 5 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category harnennor has loaded 12 lore texts, of which 9 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category southron has loaded 16 lore texts, of which 14 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category umbar has loaded 18 lore texts, of which 16 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category nomad has loaded 8 lore texts, of which 5 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category gulf has loaded 9 lore texts, of which 7 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category far_harad has loaded 0 lore texts, of which 0 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category far_harad_jungle has loaded 0 lore texts, of which 0 rewardable
-[10:20:10] [Client thread/INFO]: LOTRLore: Category half_troll has loaded 0 lore texts, of which 0 rewardable
-[10:20:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:The Lord of the Rings Mod, FMLFileResourcePack:March Of The Ents
-[10:20:16] [Client thread/INFO]: Created: 1024x1024 textures/items-atlas
-[10:20:19] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[10:20:20] [Sound Library Loader/INFO]: Sound engine started
-[10:23:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[10:23:17] [Server thread/INFO]: Generating keypair
-[10:23:22] [Server thread/INFO]: Preparing start region for level 0
-[10:23:23] [Server thread/INFO]: Preparing spawn area: 89%
-[10:23:25] [Server thread/INFO]: Changing view distance to 4, from 10
-[10:23:25] [Server thread/INFO]: Player510[local:E:c02cbc27] logged in with entity id 437 at (222.5, 63.0, 264.5)
-[10:23:25] [Server thread/INFO]: Player510 joined the game
-[10:23:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2246ms behind, skipping 44 tick(s)
-[10:23:38] [Server thread/INFO]: Player510 has just earned the achievement [Taking Inventory]
-[10:23:39] [Client thread/INFO]: [CHAT] Player510 has just earned the achievement [Taking Inventory]
-[10:23:40] [Client thread/WARN]: Failed to load texture: marchofents:textures/models/armor/sauron_helmet.png
-java.io.FileNotFoundException: marchofents:textures/models/armor/sauron_helmet.png
-	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:35) ~[SimpleTexture.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:45) [TextureManager.class:?]
-	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:60) [Render.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:70) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:517) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:173) [RendererLivingEntity.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:167) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:565) [RenderPlayer.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300) [RenderManager.class:?]
-	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:283) [RenderManager.class:?]
-	at net.minecraft.client.gui.inventory.GuiInventory.func_147046_a(GuiInventory.java:112) [GuiInventory.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawGuiContainerBackgroundLayer(GuiContainerCreative.java:839) [GuiContainerCreative.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93) [GuiContainer.class:?]
-	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:44) [InventoryEffectRenderer.class:?]
-	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:673) [GuiContainerCreative.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1137) [EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_381]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_381]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_381]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_381]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-[10:23:42] [Server thread/INFO]: Saving and pausing game...
-[10:23:42] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[10:23:42] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[10:23:42] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[10:23:42] [Server thread/INFO]: Saving chunks for level 'New World'/Utumno
-[10:23:42] [Server thread/INFO]: Saving chunks for level 'New World'/MiddleEarth
-[10:23:43] [Client thread/INFO]: Stopping!
-[10:23:43] [Server thread/INFO]: Stopping server
-[10:23:43] [Server thread/INFO]: Saving players
-[10:23:43] [Server thread/INFO]: Saving worlds
-[10:23:43] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[10:23:43] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[10:23:43] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[10:23:43] [Server thread/INFO]: Saving chunks for level 'New World'/Utumno
-[10:23:43] [Server thread/INFO]: Saving chunks for level 'New World'/MiddleEarth
+[10:12:49] [main/INFO]: Setting user: Player337
+[10:12:52] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:12:53] [Client thread/ERROR]: Couldn't initialize twitch stream
+[10:13:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:The Lord of the Rings Mod, FMLFileResourcePack:March Of The Ents
+[10:13:18] [Client thread/INFO]: LOTR: Found logger
+[10:13:19] [Client thread/INFO]: LOTR: Registered 144 packet types
+[10:13:26] [Sound Library Loader/INFO]: Sound engine started
+[10:13:49] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[10:13:51] [Client thread/INFO]: Created: 1024x1024 textures/items-atlas
+[10:13:56] [Client thread/INFO]: LOTRLore: Category ruins has loaded 13 lore texts, of which 5 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category shire has loaded 20 lore texts, of which 11 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category bree has loaded 14 lore texts, of which 12 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category blue_mountains has loaded 8 lore texts, of which 5 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category lindon has loaded 11 lore texts, of which 10 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category eriador has loaded 14 lore texts, of which 14 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category rivendell has loaded 24 lore texts, of which 22 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category eregion has loaded 7 lore texts, of which 6 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category dunland has loaded 6 lore texts, of which 5 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category gundabad has loaded 4 lore texts, of which 4 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category angmar has loaded 5 lore texts, of which 5 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category woodland_realm has loaded 4 lore texts, of which 4 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category dol_guldur has loaded 4 lore texts, of which 4 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category dale has loaded 14 lore texts, of which 12 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category durins_folk has loaded 13 lore texts, of which 6 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category lothlorien has loaded 10 lore texts, of which 10 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category rohan has loaded 5 lore texts, of which 2 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category isengard has loaded 4 lore texts, of which 3 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category gondor has loaded 21 lore texts, of which 16 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category mordor has loaded 6 lore texts, of which 6 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category dorwinion has loaded 7 lore texts, of which 5 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category rhun has loaded 9 lore texts, of which 5 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category harnennor has loaded 12 lore texts, of which 9 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category southron has loaded 16 lore texts, of which 14 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category umbar has loaded 18 lore texts, of which 16 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category nomad has loaded 8 lore texts, of which 5 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category gulf has loaded 9 lore texts, of which 7 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category far_harad has loaded 0 lore texts, of which 0 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category far_harad_jungle has loaded 0 lore texts, of which 0 rewardable
+[10:13:56] [Client thread/INFO]: LOTRLore: Category half_troll has loaded 0 lore texts, of which 0 rewardable
+[10:14:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:The Lord of the Rings Mod, FMLFileResourcePack:March Of The Ents
+[10:14:06] [Client thread/INFO]: Created: 1024x1024 textures/items-atlas
+[10:14:11] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[10:14:12] [Sound Library Loader/INFO]: Sound engine started
+[10:15:09] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[10:15:09] [Server thread/INFO]: Generating keypair
+[10:15:11] [Server thread/INFO]: Converting map!
+[10:15:11] [Server thread/INFO]: Scanning folders...
+[10:15:11] [Server thread/INFO]: Total conversion count is 0
+[10:15:13] [Server thread/WARN]: Unable to find spawn biome
+[10:15:13] [Server thread/INFO]: Preparing start region for level 0
+[10:15:14] [Server thread/INFO]: Preparing spawn area: 8%
+[10:15:15] [Server thread/INFO]: Preparing spawn area: 19%
+[10:15:16] [Server thread/INFO]: Preparing spawn area: 32%
+[10:15:17] [Server thread/INFO]: Preparing spawn area: 49%
+[10:15:18] [Server thread/INFO]: Preparing spawn area: 62%
+[10:15:19] [Server thread/INFO]: Preparing spawn area: 81%
+[10:15:21] [Server thread/INFO]: Changing view distance to 4, from 10
+[10:15:21] [Server thread/INFO]: Player337[local:E:2b424d5f] logged in with entity id 45 at (-184.5, 76.0, 250.5)
+[10:15:21] [Server thread/INFO]: Player337 joined the game
+[10:15:27] [Client thread/INFO]: Warning: Clientside chunk ticking took 233 ms
+[10:15:28] [Client thread/INFO]: Warning: Clientside chunk ticking took 116 ms
+[10:15:28] [Client thread/INFO]: Warning: Clientside chunk ticking took 108 ms
+[10:15:31] [Server thread/INFO]: Player337 has just earned the achievement [Taking Inventory]
+[10:15:31] [Client thread/INFO]: [CHAT] Player337 has just earned the achievement [Taking Inventory]
+[10:15:45] [Server thread/INFO]: Saving and pausing game...
+[10:15:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:15:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:15:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:15:46] [Server thread/INFO]: Saving chunks for level 'New World'/Utumno
+[10:15:46] [Server thread/INFO]: Saving chunks for level 'New World'/MiddleEarth
+[10:16:00] [Client thread/INFO]: [CHAT] Saved screenshot as 2023-12-07_10.16.00.png
+[10:16:01] [Server thread/INFO]: Saving and pausing game...
+[10:16:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:16:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:16:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:16:01] [Server thread/INFO]: Saving chunks for level 'New World'/Utumno
+[10:16:01] [Server thread/INFO]: Saving chunks for level 'New World'/MiddleEarth
+[10:16:04] [Server thread/INFO]: Stopping server
+[10:16:04] [Server thread/INFO]: Saving players
+[10:16:04] [Server thread/INFO]: Saving worlds
+[10:16:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:16:04] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:16:04] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:16:04] [Server thread/INFO]: Saving chunks for level 'New World'/Utumno
+[10:16:04] [Server thread/INFO]: Saving chunks for level 'New World'/MiddleEarth
+[10:16:06] [Client thread/INFO]: Stopping!

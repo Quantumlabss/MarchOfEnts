@@ -6,32 +6,42 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
+// Made with Blockbench 4.8.3
+// Exported for Minecraft version 1.7 - 1.12
+// Paste this class into your mod and generate all required imports
+
+
 public class MOEModelSauronHelm extends LOTRModelBiped {
-	
-	private ModelRenderer head;
-	//private ModelRenderer 
+	private final ModelRenderer head;
 	
 	public MOEModelSauronHelm() {
 		this(0.0f);
 	}
-	
+
 	public MOEModelSauronHelm(final float f) {
-		super(f);
-		(this.bipedHead = new ModelRenderer((ModelBase)this, 0, 0)).setRotationPoint(0.0f, 0.0f, 0.0f);
-        this.bipedHead.addBox(-4.0f, -8.0f, -4.0f, 8, 8, 8, f);
-        this.bipedHead.setTextureOffset(32, 0).addBox(-0.5f, -9.0f, -3.5f, 1, 1, 7, f);
-        this.bipedHeadwear.cubeList.clear();
-        this.bipedBody.cubeList.clear();
-        this.bipedRightArm.cubeList.clear();
-        this.bipedLeftArm.cubeList.clear();
-        this.bipedRightLeg.cubeList.clear();
-        this.bipedLeftLeg.cubeList.clear();
+		textureWidth = 64;
+		textureHeight = 32;
+
+		head = new ModelRenderer(this);
+		head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		head.cubeList.add(new ModelBox(head, 0, 0, -4.0F, -7.0F, -4.0F, 8, 8, 8, 0.75F));
+		head.cubeList.add(new ModelBox(head, 32, 0, -4.0F, -7.0F, -4.0F, 8, 8, 8, 1.0F));
+		head.cubeList.add(new ModelBox(head, 0, 0, -1.0F, -16.75F, -4.25F, 2, 9, 2, 0.0F));
+		head.cubeList.add(new ModelBox(head, 0, 0, 2.5F, -16.75F, -0.25F, 2, 9, 2, 0.0F));
+		head.cubeList.add(new ModelBox(head, 0, 0, -4.5F, -16.75F, -0.25F, 2, 9, 2, 0.0F));
+		head.cubeList.add(new ModelBox(head, 0, 0, -1.0F, -16.75F, 2.75F, 2, 9, 2, 0.0F));
+		head.cubeList.add(new ModelBox(head, 0, 0, 2.0F, -14.75F, -4.25F, 2, 7, 2, 0.0F));
+		head.cubeList.add(new ModelBox(head, 0, 0, -4.0F, -14.75F, -4.25F, 2, 7, 2, 0.0F));
 	}
-	
-    @Override
-    public void setRotationAngles(final float f, final float f1, final float f2, final float f3, final float f4, final float f5, final Entity entity) {
-        super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
 
-    }
+	@Override
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+		head.render(f5);
+	}
 
+	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+		modelRenderer.rotateAngleX = x;
+		modelRenderer.rotateAngleY = y;
+		modelRenderer.rotateAngleZ = z;
+	}
 }

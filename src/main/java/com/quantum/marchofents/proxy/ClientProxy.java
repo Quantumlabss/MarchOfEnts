@@ -6,7 +6,7 @@ package com.quantum.marchofents.proxy;
 
 
 import com.quantum.marchofents.render.MOERenderManager;
-import com.quantum.marchofents.init.Items;
+import com.quantum.marchofents.init.MOEItems;
 
 
 import cpw.mods.fml.client.registry.RenderingRegistry;

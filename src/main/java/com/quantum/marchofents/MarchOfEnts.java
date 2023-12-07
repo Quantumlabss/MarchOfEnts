@@ -62,7 +62,7 @@ public class MarchOfEnts
 	public void preInit(FMLPreInitializationEvent event) 
 	{
 		//init items
-		Items.Init();
+		MOEItems.Init();
 		
 		ItemFangornBanner.preInit();
 		

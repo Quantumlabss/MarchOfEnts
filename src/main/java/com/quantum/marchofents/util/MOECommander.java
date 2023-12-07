@@ -3,7 +3,7 @@ package com.quantum.marchofents.util;
 import java.lang.reflect.Constructor;
 
 import com.quantum.marchofents.MarchOfEnts;
-import com.quantum.marchofents.init.Items;
+import com.quantum.marchofents.init.MOEItems;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -73,7 +73,7 @@ public class MOECommander {
 	}
 	
 	public static List<Item> getAllMOEItems(){
-		return MOECommander.getObjectFieldsOfType(Items.class, Item.class);
+		return MOECommander.getObjectFieldsOfType(MOEItems.class, Item.class);
 	}
 	public static void setMiniQuestFactoryAchievement(LOTRMiniQuestFactory factory, LOTRAchievement achievement) {
 		findAndInvokeMethod(achievement, LOTRMiniQuestFactory.class, factory, "setAchievement", LOTRAchievement.class);
