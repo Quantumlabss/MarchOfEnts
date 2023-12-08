@@ -1,7 +1,7 @@
 package com.quantum.marchofents.items;
 
 import com.quantum.marchofents.database.MOEMaterial;
-import com.quantum.marchofents.render.model.MOEModelSauronHelm;
+import com.quantum.marchofents.render.model.MOEModelSauronHelmet;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -25,7 +25,7 @@ public class ItemSauronHelm extends MOEItemArmor {
     public ModelBiped getCustomModel(final EntityLivingBase entityLiving, final ItemStack itemStack, final int armorSlot) {
         if (armorSlot == 0) {
             if (this.model == null) {
-                this.model = (ModelBiped)new MOEModelSauronHelm(1.0f);
+                this.model = (ModelBiped)new MOEModelSauronHelmet(1.0f);
             	//this.model = new MOEModelSauronHelm(1.0f);
             }
             return this.model;
