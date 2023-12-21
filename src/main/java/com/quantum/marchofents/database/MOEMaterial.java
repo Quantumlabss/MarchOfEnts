@@ -161,14 +161,14 @@ public class MOEMaterial {
     static {
     	
     	MOEMaterial.LEBENNIN = newLOTRMaterial("LEBENNIN", 450, 0.0f, 0.5f, 0.0f, 0, 15, null);
-    	MOEMaterial.FINGOLFIN = newLOTRMaterial("FINGOLFIN", 700, 3.0f, 0.6f, 7.0f, 2, 15, null );
+    	MOEMaterial.FINGOLFIN = newLOTRMaterial("FINGOLFIN", 700, 3.0f, 0.6f, 7.0f, 2, 15, null);
     	MOEMaterial.HIGH_ELVEN_ELITE = newLOTRMaterial("HIGH_ELVEN_ELITE", 700, 3.0f, 0.6f, 7.0f, 2, 15, null);
     	MOEMaterial.DRAGON_HELM = newLOTRMaterial("DRAGON_HELM", 700, 3.0f, 0.9f, 7.0f, 2, 15, null, null, false, true);
     	MOEMaterial.ELVEN_CIRCLET = newLOTRMaterial("ELVEN_CIRCLET", 400, 2.5f, 0.6f, 2.0f, 6, 10, null);
     	MOEMaterial.FANGORN = newLOTRMaterial("FANGORN", 450, 3.0f, 0.5f, 7.0f, 2, 15, null);
     	MOEMaterial.ENTISH = newLOTRMaterial("ENTISH", 450, 0.0f, 0.5f, 0.0f, 0, 15, null);
     	MOEMaterial.SAURON = newLOTRMaterial("SAURON", 700, 3.0f, 0.6f, 7.0f, 2, 15, null);
-    	MOEMaterial.LOSSARNACH = newLOTRMaterial("LOSSARNACH", 456, 0.0f, 0.5f, 0.0f, 0, 15, null);
+    	MOEMaterial.LOSSARNACH = newLOTRMaterial("LOSSARNACH", 450, 0.0f, 0.5f, 0.0f, 0, 15, null);
     	MOEMaterial.setup = false;
     	}
     

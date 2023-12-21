@@ -306,31 +306,6 @@
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTRMod v36.15.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="api,main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/fr_FR.lang">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="api,main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/zh_CN.lang">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="api,main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/en_US.lang">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="api,main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/hr_HR.lang">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="api,main,test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/readme.txt">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
@@ -341,7 +316,12 @@
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/es_MX.lang">
+	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/en_US.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTRMod v36.15.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>

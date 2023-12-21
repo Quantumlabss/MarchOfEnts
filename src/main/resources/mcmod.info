@@ -2,13 +2,13 @@
 {
   "modid": "marchofents",
   "name": "March Of The Ents",
-  "description": "Example placeholder mod.",
+  "description": "This Mod Adds a ton of new stuff to the Lord Of The Rings Mod Legacy. This mod was made exclucively for the DOS server.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://discord.gg/xHcQr9PKwK",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["The MOE Dev Team"],
+  "credits": "The DOS Staff Team, and the developers of the LOTR Mod legacy",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

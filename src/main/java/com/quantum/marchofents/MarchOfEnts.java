@@ -12,6 +12,7 @@ import com.quantum.marchofents.items.ItemFangornBanner;
 import com.quantum.marchofents.proxy.ServerProxy;
 
 import com.quantum.marchofents.util.MOEModChecker;
+import com.quantum.marchofents.util.MOERecipes;
 import com.quantum.marchofents.util.MOETickHandlerServer;
 
 import cpw.mods.fml.common.Mod;
@@ -63,6 +64,7 @@ public class MarchOfEnts
 	{
 		//init items
 		MOEItems.Init();
+		//MOERecipes.preInit();
 		
 		ItemFangornBanner.preInit();
 		

@@ -35,6 +35,11 @@ item.entish_leggings.name=Entish Leggings
 item.entish_boots.name=Entish Boots
 item.entish_branch.name=Entish Branch
 item.hand_of_treebeard.name=Hand Of Treebeard
+item.lossarnach_battleaxe.name=Lossarnach Battleaxe
+item.lossarnach_heavy_warhammer.name=Lossarnach Heavy Warhammer
+item.lossarnach_spear.name=Lossarnach Spear
+item.lossarnach_sword.name=Lossarnach Sword
+item.lossarnach_poleaxe.name=Lossarnach PoleAxe
 item.sauron_helm.name=Sauron Helm
 item.dragon_helm.name=The Dragon Helm Of Dor-Lomin
 

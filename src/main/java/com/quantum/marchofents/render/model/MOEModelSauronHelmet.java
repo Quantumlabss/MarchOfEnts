@@ -22,21 +22,24 @@ public class MOEModelSauronHelmet extends LOTRModelBiped {
 	
 	public MOEModelSauronHelmet(final float f) {
 		super(f);
+		textureWidth = 64;
+		textureHeight = 32;
 		
 		(this.bipedHead = new ModelRenderer((ModelBase)this, 0, 0)).setRotationPoint(0.0f, 0.0f, 0.0f);
         this.bipedHead.addBox(-4.0f, -8.0f, -4.0f, 8, 8, 8, f);
         this.bipedHead.setTextureOffset(32, 0).addBox(-0.5f, -9.0f, -3.5f, 1, 1, 7, f);
-       // (this.spikeFCenter = new ModelRenderer((ModelBase)this, 0, 16)).addBox(-4.0F, -7.0F, -4.0F, 8, 8, 8, 0.75F);
-       // this.spikeFCenter.setTextureOffset(20, 16).addBox(-3.5f - f, -5.0f, 1.9f + f, 0, 6, 8, 0.0f);
-        this.bipedHead.addBox(0, 0, -4.0F, 8, 8, 8, 0.75F);
-		this.bipedHead.addBox(32, 0, -4.0F, 8, 8, 8, 1.0F);
-		this.bipedHead.addBox(0, 0, -1.0F, 2, 9, 2, 0.0F);
-		this.bipedHead.addBox(0, 0, 2.5F, 2, 9, 2, 0.0F);
-		this.bipedHead.addBox(0, 0, -4.5F, 2, 9, 2, 0.0F);
-		this.bipedHead.addBox(0, 0, -1.0F, 2, 9, 2, 0.0F);
-		this.bipedHead.addBox(0, 0, 2.0F, 2, 7, 2, 0.0F);
-		this.bipedHead.addBox(0, 0, -4.0F, 2, 7, 2, 0.0F);
-      //  this.bipedHead.addChild(this.spikeFCenter);
+        (this.spikeFCenter = new ModelRenderer((ModelBase)this, 0, 0)).addBox(-1.0F, -16.75F, -4.25F, 2, 9, 2, 0.0F);
+        (this.spikeFLeft = new ModelRenderer((ModelBase)this, 0, 0)).addBox(-4.0F, -14.75F, -4.25F, 2, 7, 2, 0.0F);
+        (this.spikeFRight = new ModelRenderer((ModelBase)this, 0, 0)).addBox(2.0F, -14.75F, -4.25F, 2, 7, 2, 0.0F);
+        (this.spikeRight = new ModelRenderer((ModelBase)this, 0, 0)).addBox(2.5F, -16.75F, -0.25F, 2, 9, 2, 0.0F);
+        (this.spikeLeft = new ModelRenderer((ModelBase)this, 0, 0)).addBox(-4.5F, -16.75F, -0.25F, 2, 9, 2, 0.0F);
+        (this.spikeBack = new ModelRenderer((ModelBase)this, 0, 0)).addBox(-1.0F, -16.75F, 2.75F, 2, 9, 2, 0.0F);
+        this.bipedHead.addChild(this.spikeFCenter);
+        this.bipedHead.addChild(this.spikeFLeft);
+        this.bipedHead.addChild(this.spikeFRight);
+        this.bipedHead.addChild(this.spikeLeft);
+        this.bipedHead.addChild(this.spikeRight);
+        this.bipedHead.addChild(this.spikeBack);
         this.bipedHeadwear.cubeList.clear();
         this.bipedBody.cubeList.clear();
         this.bipedRightArm.cubeList.clear();

@@ -24,6 +24,10 @@ public class MOERecipes {
 		
 	}
 	
+	public static void preInit() {
+		createMOEWeaponRecipes();
+	}
+	
 	
 
 }

@@ -23,6 +23,8 @@ import com.quantum.marchofents.items.MOEItemArmor;
 import lotr.common.item.LOTRItemBattleaxe;
 import lotr.common.item.LOTRItemHammer;
 import lotr.common.item.LOTRItemPike;
+import lotr.common.item.LOTRItemPolearm;
+import lotr.common.item.LOTRItemSpear;
 import lotr.common.item.LOTRItemSword;
 import lotr.common.item.LOTRMaterial;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -81,6 +83,11 @@ public class MOEItems {
 	public static Item lossarnachChestplate;
 	public static Item lossarnachLeggings;
 	public static Item lossarnachBoots;
+	public static Item lossarnachBattleaxe;
+	public static Item lossarnachHeavyWarhammer;
+	public static Item lossarnachSword;
+	public static Item lossarnachSpear;
+	public static Item lossarnachPoleaxe;
 	
 	
 	//tool materials
@@ -109,6 +116,11 @@ public class MOEItems {
 		gondolinWarHammer = new LOTRItemHammer(LOTRMaterial.GONDOLIN);
 		entishBranch = new LOTRItemHammer(MOEMaterial.ENTISH);
 		handOfTreebeard = new LOTRItemHammer(LOTRMaterial.MALLORN_MACE);
+		lossarnachBattleaxe = new LOTRItemBattleaxe(MOEMaterial.LOSSARNACH);
+		lossarnachHeavyWarhammer = new LOTRItemHammer(MOEMaterial.LOSSARNACH);
+		lossarnachSpear = new LOTRItemSpear(MOEMaterial.LOSSARNACH);
+		lossarnachSword = new LOTRItemSword(MOEMaterial.LOSSARNACH);
+		lossarnachPoleaxe = new LOTRItemPolearm(MOEMaterial.LOSSARNACH);
 		nauglamir = new ItemNauglamir().setUnlocalizedName("itemNauglamir").setTextureName("marchofents:nauglamir").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
 		
 		//armor item
@@ -197,6 +209,12 @@ public class MOEItems {
 		MOEItems.nameAndRegisterItem(lossarnachLeggings, "lossarnachLeggings");
 		MOEItems.nameAndRegisterItem(lossarnachBoots, "lossarnachBoots");
 		MOEItems.nameAndRegisterItem(sauronHelm, "sauronHelm");
+		MOEItems.nameAndRegisterItem(lossarnachBattleaxe, "lossarnachBattleaxe");
+		MOEItems.nameAndRegisterItem(lossarnachHeavyWarhammer, "lossarnachHeavyWarhammer");
+		MOEItems.nameAndRegisterItem(lossarnachSpear, "lossarnachSpear");
+		MOEItems.nameAndRegisterItem(lossarnachSword, "lossarnachSword");
+		MOEItems.nameAndRegisterItem(lossarnachPoleaxe, "lossarnachPoleaxe");
+		
 		//MOEItems.nameAndRegisterItem(sauronChestplate, "sauronChestplate");
 
 
