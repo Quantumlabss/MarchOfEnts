@@ -8,6 +8,10 @@ import net.minecraft.entity.Entity;
 public class MOEModelSauronChestplate extends LOTRModelBiped {
 	
 	
+	
+	
+	
+	
 	public MOEModelSauronChestplate() {
 		this(0.0f);
 	}
@@ -18,8 +22,15 @@ public class MOEModelSauronChestplate extends LOTRModelBiped {
 		textureWidth = 32;
 		textureHeight = 32;
 		(this.bipedBody = new ModelRenderer((ModelBase)this, 0, 0)).setRotationPoint(0.0f, 0.0f, 0.0f);
-        this.bipedBody.addBox(-4.0f, -8.0f, -4.0f, 8, 8, 8, f);
-		
+        this.bipedBody.addBox(-4.0f, -7.0f, -4.0f, 8, 8, 8, f);
+        //(this.bipedLeftArm = new ModelRenderer((ModelBase)this, 0, 0)).setRotationPoint(0.0f, 0.0f, 0.0f);
+        //this.bipedLeftArm.addBox();
+        this.bipedHeadwear.cubeList.clear();
+        this.bipedHead.cubeList.clear();
+        //this.bipedRightArm.cubeList.clear();
+        //this.bipedLeftArm.cubeList.clear();
+        this.bipedRightLeg.cubeList.clear();
+        this.bipedLeftLeg.cubeList.clear();
 		
 		
 	}

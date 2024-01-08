@@ -306,7 +306,17 @@
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/hr_HR.lang">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/readme.txt">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/zh_CN.lang">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>

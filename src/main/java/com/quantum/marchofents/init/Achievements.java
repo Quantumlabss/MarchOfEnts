@@ -66,10 +66,10 @@ public class Achievements {
 		wearElvenCirclet = createArmorAchievement(Category.LOTHLORIEN, 600, MOEItems.elvenCirclet, "wearElvenCirclet").createTitle();
 		wearDragonHelm = createArmorAchievement(Category.GONDOR, 700, MOEItems.dragonHelm, "wearDragonHelm").createTitle();
 		doMiniQuestFangorn = new LOTRAchievement(Category.FANGORN, 20, LOTRMod.redBook, "doMiniQuestFangorn").setRequiresAlly(LOTRFaction.FANGORN);
-		wearFullEntish = createArmorAchievement(Category.FANGORN, 21, MOEItems.entishChestplate, "wearFullEntish").createTitle();
-		wearFullFangorn = createArmorAchievement(Category.FANGORN, 22, MOEItems.fangornChestplate, "wearFullFangorn").createTitle();
-		getEntishBranch = new LOTRAchievement(Category.FANGORN, 23, MOEItems.entishBranch, "getEntishBranch").createTitle();
-		getTreebeardHand = new LOTRAchievement(Category.FANGORN, 24, MOEItems.handOfTreebeard, "getTreebeardHand").createTitle();
+		//wearFullEntish = createArmorAchievement(Category.FANGORN, 21, MOEItems.entishChestplate, "wearFullEntish").createTitle();
+		//wearFullFangorn = createArmorAchievement(Category.FANGORN, 22, MOEItems.fangornChestplate, "wearFullFangorn").createTitle();
+	//	getEntishBranch = new LOTRAchievement(Category.FANGORN, 23, MOEItems.entishBranch, "getEntishBranch").createTitle();
+	//	getTreebeardHand = new LOTRAchievement(Category.FANGORN, 24, MOEItems.handOfTreebeard, "getTreebeardHand").createTitle();
 		getNargothrondBattleaxe = new LOTRAchievement(Category.LOTHLORIEN, 601, MOEItems.nargothrondBattleAxe, "getNargothrondBattleaxe").createTitle();
 		getNumenoreanSword = new LOTRAchievement(Category.GONDOR, 51, MOEItems.numenoreanSword, "getNumenoreanSword").createTitle();
 		
