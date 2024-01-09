@@ -1,6 +1,7 @@
 package com.quantum.marchofents;
 
 
+import com.quantum.integrator.NEIMOEIntegrator;
 import com.quantum.marchofents.database.MOEMaterial;
 import com.quantum.marchofents.database.MOEMiniQuestFactory;
 import com.quantum.marchofents.database.MOEShields;
@@ -64,7 +65,7 @@ public class MarchOfEnts
 	{
 		//init items
 		MOEItems.Init();
-		//MOERecipes.preInit();
+		MOERecipes.preInit();
 		
 		ItemFangornBanner.preInit();
 		
@@ -72,9 +73,9 @@ public class MarchOfEnts
 		
 		proxy.preInit(event);
 		
-		//if(MOEModChecker.hasNEI() && MOEModChecker.hasGuiContainer()) {
-			//NEIIntegrator.registerRecipes();
-	//	}
+		if(MOEModChecker.hasNEI() && MOEModChecker.hasGuiContainer()) {
+			NEIMOEIntegrator.registerRecipes();
+		}
 		
 		//proxy.preInit(event);
 		

@@ -14,9 +14,11 @@ import net.minecraft.item.*;
 
 public class MOERecipes {
 	
+	public static List<IRecipe> moeArnor = new ArrayList<>();
+	
 
 	
-	public static void createMOEWeaponRecipes() {
+	public static void createArnorRecipes() {
 		
 		GameRegistry.addRecipe(new ItemStack (MOEItems.longswordArnor), "  X", " X ", "Y  ", "X", Items.iron_ingot, "Y", Items.stick);
 		
@@ -25,8 +27,9 @@ public class MOERecipes {
 	}
 	
 	public static void preInit() {
-		createMOEWeaponRecipes();
+		createArnorRecipes();
 	}
+	
 	
 	
 
