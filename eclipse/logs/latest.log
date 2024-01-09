@@ -1,6 +1,6 @@
-[10:46:39] [main/INFO]: Setting user: Player910
-[10:46:49] [Client thread/INFO]: LWJGL Version: 2.9.1
-[10:46:52] [Client thread/ERROR]: Couldn't initialize twitch stream
-[10:48:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:The Lord of the Rings Mod, FMLFileResourcePack:March Of The Ents
-[10:48:57] [Client thread/INFO]: LOTR: Found logger
-[10:49:00] [Client thread/INFO]: LOTR: Registered 144 packet types
+[11:48:39] [main/INFO]: Setting user: Player985
+[11:48:43] [Client thread/INFO]: LWJGL Version: 2.9.1
+[11:48:43] [Client thread/ERROR]: Couldn't initialize twitch stream
+[11:49:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:The Lord of the Rings Mod, FMLFileResourcePack:March Of The Ents
+[11:49:03] [Client thread/INFO]: LOTR: Found logger
+[11:49:04] [Client thread/INFO]: LOTR: Registered 144 packet types
