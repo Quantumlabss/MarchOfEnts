@@ -27,7 +27,7 @@ public class NEIMOEIntegrator {
 	public static void registerRecipes() {
 		//registerHandler("red_mountains", DRBlockTableRedDwarven.Gui.class, DRRecipe.redMountains);
 		//registerHandler("wind_mountains", DRBlockTableWindDwarven.Gui.class, DRRecipe.windMountains);
-		registerHandler("arnor", LOTRGuiCraftingTable.Ranger.class, MOERecipes.moeArnor);
+		registerHandler("moeArnor", LOTRGuiCraftingTable.Ranger.class, MOERecipes.moeArnor);
 	}
 
 }

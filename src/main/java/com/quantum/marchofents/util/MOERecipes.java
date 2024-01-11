@@ -8,6 +8,7 @@ import com.quantum.marchofents.init.MOEItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
+import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraft.client.Minecraft;
 import net.minecraft.init.Items;
@@ -23,13 +24,14 @@ public class MOERecipes {
 	
 	public static void createArnorRecipes() {
 		
-		moeArnor.add(new ShapedOreRecipe (new ItemStack (MOEItems.longswordArnor), "  X", " X ", "Y  ", "X", Items.iron_ingot, "Y", Items.stick));
-
+		GameRegistry.addShapedRecipe(new ItemStack (MOEItems.longswordArnor), "  X", " X ", "Y  ", "X", Items.iron_ingot, "Y", Items.stick);
+		
 		
 		
 	}
 	public static void registerRecipes() {
-		LOTRRecipes.rangerRecipes.addAll(moeArnor);
+		//LOTRRecipes.rangerRecipes.addAll(moeArnor);
+		
 	}
 	
 	public static boolean isIron(ItemStack itemstack) {

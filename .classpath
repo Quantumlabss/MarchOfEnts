@@ -306,22 +306,17 @@
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/CodeChickenLib-1.7.10-1.1.3.140-universal.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/NotEnoughItems-1.7.10-1.0.5.120-universal.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/readme.txt">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="api,main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/zh_CN.lang">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="api,main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/ja_JP.lang">
+	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTRMod v36.15.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>
@@ -331,12 +326,17 @@
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/CodeChickenLib-1.7.10-1.1.3.140-universal.jar">
+	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/zh_CN.lang">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTRMod v36.15.jar">
+	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/readme.txt">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="api,main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/alex/MarchOfEnts/libs/LOTR_UpdatedLangFiles/ja_JP.lang">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="api,main,test"/>
 		</attributes>
