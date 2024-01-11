@@ -5,6 +5,7 @@ import com.quantum.marchofents.MarchOfEnts;
 import com.quantum.marchofents.database.MOEMaterial;
 import com.quantum.marchofents.items.ItemElvenCirclet;
 import com.quantum.marchofents.items.ItemElvenEliteArmor;
+import com.quantum.marchofents.items.ItemFangornWarHammer;
 import com.quantum.marchofents.items.ItemFeanorianSword;
 import com.quantum.marchofents.items.ItemFingolfinArmor;
 import com.quantum.marchofents.items.ItemGondolinBattleAxe;
@@ -53,6 +54,8 @@ public class MOEItems {
 	public static Item lebenninSword;
 	public static Item entishBranch;
 	public static Item handOfTreebeard;
+	public static Item fangornBattleaxe;
+	public static Item fangornWarhammer;
 	public static Item lebenninHelmet;
 	public static Item lebenninChestplate;
 	public static Item lebenninLeggings;
@@ -116,6 +119,9 @@ public class MOEItems {
 		gondolinWarHammer = new LOTRItemHammer(LOTRMaterial.GONDOLIN);
 		entishBranch = new LOTRItemHammer(MOEMaterial.ENTISH);
 		handOfTreebeard = new LOTRItemHammer(LOTRMaterial.MALLORN_MACE);
+		fangornWarhammer = new LOTRItemHammer(MOEMaterial.FANGORN);
+		
+		
 		lossarnachBattleaxe = new LOTRItemBattleaxe(MOEMaterial.LOSSARNACH);
 		lossarnachHeavyWarhammer = new LOTRItemHammer(MOEMaterial.LOSSARNACH);
 		lossarnachSpear = new LOTRItemSpear(MOEMaterial.LOSSARNACH);
@@ -194,6 +200,7 @@ public class MOEItems {
 		MOEItems.nameAndRegisterItem(fingolfinBoots, "fingolfinBoots");
 		MOEItems.nameAndRegisterItem(elvenCirclet, "elvenCirclet");
 		MOEItems.nameAndRegisterItem(dragonHelm, "dragonHelm");
+		MOEItems.nameAndRegisterItem(fangornWarhammer, "fangornWarhammer");
 		//MOEItems.nameAndRegisterItem(fangornHelm, "fangornHelm");
 		//MOEItems.nameAndRegisterItem(fangornChestplate, "fangornChestplate");
 		//MOEItems.nameAndRegisterItem(fangornLeggings, "fangornLeggings");

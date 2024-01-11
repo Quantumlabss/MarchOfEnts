@@ -65,7 +65,7 @@ public class MarchOfEnts
 	{
 		//init items
 		MOEItems.Init();
-		//MOERecipes.preInit();
+		MOERecipes.preInit();
 		
 		ItemFangornBanner.preInit();
 		
@@ -73,11 +73,11 @@ public class MarchOfEnts
 		
 		proxy.preInit(event);
 		
-		//if(MOEModChecker.hasNEI() && MOEModChecker.hasGuiContainer()) {
-		//	NEIMOEIntegrator.registerRecipes();
-		//}
+		if(MOEModChecker.hasNEI() && MOEModChecker.hasGuiContainer()) {
+			NEIMOEIntegrator.registerRecipes();
+		}
 		
-		//proxy.preInit(event);
+		proxy.preInit(event);
 		
 		
 		
@@ -92,7 +92,7 @@ public class MarchOfEnts
 		MOEMiniQuestFactory.onInit();
 		
 		MOEShields.onInit();
-		proxy.onInit(event);
+		//proxy.onInit(event);
 		
 		
 		

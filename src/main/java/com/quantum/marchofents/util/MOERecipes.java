@@ -24,13 +24,13 @@ public class MOERecipes {
 	
 	public static void createArnorRecipes() {
 		
-		GameRegistry.addShapedRecipe(new ItemStack (MOEItems.longswordArnor), "  X", " X ", "Y  ", "X", Items.iron_ingot, "Y", Items.stick);
-		
+		//GameRegistry.addShapedRecipe(new ItemStack (MOEItems.longswordArnor), "  X", " X ", "Y  ", "X", Items.iron_ingot, "Y", Items.stick);
+		moeArnor.add(new ShapedOreRecipe (new ItemStack (MOEItems.longswordArnor), "  X", " X ", "Y  ", "X", Items.iron_ingot, "Y", Items.stick));
 		
 		
 	}
 	public static void registerRecipes() {
-		//LOTRRecipes.rangerRecipes.addAll(moeArnor);
+		LOTRRecipes.rangerRecipes.addAll(moeArnor);
 		
 	}
 	
