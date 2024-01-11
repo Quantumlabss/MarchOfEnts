@@ -8,6 +8,7 @@ import com.quantum.marchofents.init.MOEItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
+import net.minecraft.item.crafting.RecipesTools;
 import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraft.client.Minecraft;
@@ -16,19 +17,27 @@ import net.minecraft.item.*;
 import lotr.common.LOTRMod;
 import lotr.common.recipe.LOTRRecipes;
 
+
 public class MOERecipes {
 	
 	public static List<IRecipe> moeArnor = new ArrayList<>();
+	public static List<IRecipe> moeGondor = new ArrayList<>();
 	
 
 	
 	public static void createArnorRecipes() {
 		
-		//GameRegistry.addShapedRecipe(new ItemStack (MOEItems.longswordArnor), "  X", " X ", "Y  ", "X", Items.iron_ingot, "Y", Items.stick);
-		moeArnor.add(new ShapedOreRecipe (new ItemStack (MOEItems.longswordArnor), "  X", " X ", "Y  ", "X", Items.iron_ingot, "Y", Items.stick));
+		
+		moeArnor.add(new ShapedOreRecipe (new ItemStack (MOEItems.longswordArnor), "  X", " X ", "Y  ", 'X', Items.iron_ingot, 'Y', Items.stick));
 		
 		
 	}
+	public static void createGondorRecipes() {
+		
+		
+	}
+	
+	
 	public static void registerRecipes() {
 		LOTRRecipes.rangerRecipes.addAll(moeArnor);
 		
@@ -40,6 +49,7 @@ public class MOERecipes {
 	
 	public static void preInit() {
 		createArnorRecipes();
+		createGondorRecipes();
 		registerRecipes();
 	}
 	

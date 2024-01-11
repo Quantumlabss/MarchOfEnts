@@ -22,6 +22,7 @@ import com.quantum.marchofents.items.ItemDragonHelm;
 import com.quantum.marchofents.items.MOEItemArmor;
 
 import lotr.common.item.LOTRItemBattleaxe;
+import lotr.common.item.LOTRItemBow;
 import lotr.common.item.LOTRItemHammer;
 import lotr.common.item.LOTRItemPike;
 import lotr.common.item.LOTRItemPolearm;
@@ -56,6 +57,8 @@ public class MOEItems {
 	public static Item handOfTreebeard;
 	public static Item fangornBattleaxe;
 	public static Item fangornWarhammer;
+	public static Item fangornBow;
+
 	public static Item lebenninHelmet;
 	public static Item lebenninChestplate;
 	public static Item lebenninLeggings;
@@ -120,6 +123,8 @@ public class MOEItems {
 		entishBranch = new LOTRItemHammer(MOEMaterial.ENTISH);
 		handOfTreebeard = new LOTRItemHammer(LOTRMaterial.MALLORN_MACE);
 		fangornWarhammer = new LOTRItemHammer(MOEMaterial.FANGORN);
+		fangornBattleaxe = new LOTRItemBattleaxe(MOEMaterial.FANGORN);
+		fangornBow = new LOTRItemBow(MOEMaterial.FANGORN);
 		
 		
 		lossarnachBattleaxe = new LOTRItemBattleaxe(MOEMaterial.LOSSARNACH);
@@ -201,6 +206,8 @@ public class MOEItems {
 		MOEItems.nameAndRegisterItem(elvenCirclet, "elvenCirclet");
 		MOEItems.nameAndRegisterItem(dragonHelm, "dragonHelm");
 		MOEItems.nameAndRegisterItem(fangornWarhammer, "fangornWarhammer");
+		MOEItems.nameAndRegisterItem(fangornBattleaxe, "fangornBattleaxe");
+		MOEItems.nameAndRegisterItem(fangornBow, "fangornBow");
 		//MOEItems.nameAndRegisterItem(fangornHelm, "fangornHelm");
 		//MOEItems.nameAndRegisterItem(fangornChestplate, "fangornChestplate");
 		//MOEItems.nameAndRegisterItem(fangornLeggings, "fangornLeggings");
