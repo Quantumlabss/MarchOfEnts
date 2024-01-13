@@ -11,7 +11,7 @@ import com.quantum.marchofents.init.Achievements;
 import com.quantum.marchofents.init.MOEItems;
 import com.quantum.marchofents.items.ItemFangornBanner;
 import com.quantum.marchofents.proxy.ServerProxy;
-
+import com.quantum.marchofents.util.MOEEventHandler;
 import com.quantum.marchofents.util.MOEModChecker;
 import com.quantum.marchofents.util.MOERecipes;
 import com.quantum.marchofents.util.MOETickHandlerServer;
@@ -23,6 +23,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -30,7 +31,7 @@ import net.minecraft.item.ItemStack;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = "marchofents", name = "March Of The Ents", version = "1.0.0-A1", dependencies = "required-after:lotr")
+@Mod(modid = MarchOfEnts.MODID, name = MarchOfEnts.NAME, version = MarchOfEnts.VERSION, dependencies = "required-after:lotr")
 
 public class MarchOfEnts 
 
@@ -53,6 +54,7 @@ public class MarchOfEnts
 	public static MarchOfEnts instance;
 	
 	public static MOETickHandlerServer tickHandler;
+	public static MOEEventHandler eventHandler;
 
 	
 	public static ModContainer getModContainer() {
@@ -63,11 +65,13 @@ public class MarchOfEnts
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) 
 	{
+		NetworkRegistry.INSTANCE.registerGuiHandler(this, proxy);
 		//init items
 		MOEItems.Init();
 		MOERecipes.preInit();
 		
 		ItemFangornBanner.preInit();
+		eventHandler = new MOEEventHandler();
 		
 		
 		
@@ -92,7 +96,7 @@ public class MarchOfEnts
 		MOEMiniQuestFactory.onInit();
 		
 		MOEShields.onInit();
-		//proxy.onInit(event);
+		proxy.onInit(event);
 		
 		
 		
@@ -101,7 +105,7 @@ public class MarchOfEnts
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-		proxy.postInit(event);
+		//proxy.postInit(event);
 		
 		
 	}

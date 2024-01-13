@@ -18,7 +18,7 @@ item.lossarnach_spear.name=Lossarnach Spear
 item.lossarnach_swoard.name=Lossarnach Sword
 item.lossarnach_poleaxe.name=Lossarnach Poleaxe
 item.fangorn_warhammer.name=Fist Of The Ents
-item.fangorn_battleaxe.name=Wrath Of The Ents
+item.fangorn_mace.name=Wrath Of The Ents
 item.fangorn_bow.name=LongBow of The Ents
 item.lebennin_helmet.name=Lebennin Helm
 item.lebennin_chestplate.name=Lebennin Chestplate
@@ -55,6 +55,7 @@ item.lossarnach_poleaxe.name=Lossarnach PoleAxe
 item.sauron_helm.name=Helm Of Sauron
 item.sauron_chestplate.name=Sauron's Chestplate
 item.dragon_helm.name=The Dragon Helm Of Dor-Lomin
+tile.fangorn_crafting_table.name=Fangorn Crafting Table
 
 lotr.achievement.getNauglamir.title=Ruin Of Thingol
 lotr.achievement.getNauglamir.desc=Aquire The Nauglamir
@@ -94,7 +95,10 @@ lotr.achievement.getDoriathSword.title=Treasures Of Menegroth
 lotr.achievement.getDoriathSword.desc=Equip A Doriath Longsword
 lotr.achievement.wearLossarnachPlateSet.title=lossarnachplateset
 lotr.achievement.wearLossarnachPlateSet.desc=lossarnachplateset
+lotr.achievement.craftFangornBow.title=Fury Of The Ents
+lotr.achievement.craftFangornBow.desc=Craft A Fangorn Bow
 
+container.lotr.crafting.fangorn=Fangorn Crafting
 item.lotr:banner.fangorn.name=Banner Of Fangorn
 lotr.shields.ALIGNMENT_FANGORN.desc=Reward for reaching 1000+ reputation with the Ents
 lotr.shields.ALIGNMENT_FANGORN.name=Shield Of The Ents

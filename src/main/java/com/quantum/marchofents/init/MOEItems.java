@@ -2,6 +2,7 @@ package com.quantum.marchofents.init;
 
 import com.google.common.base.CaseFormat;
 import com.quantum.marchofents.MarchOfEnts;
+import com.quantum.marchofents.blocks.MOECraftingTableFangorn;
 import com.quantum.marchofents.database.MOEMaterial;
 import com.quantum.marchofents.items.ItemElvenCirclet;
 import com.quantum.marchofents.items.ItemElvenEliteArmor;
@@ -30,9 +31,10 @@ import lotr.common.item.LOTRItemSpear;
 import lotr.common.item.LOTRItemSword;
 import lotr.common.item.LOTRMaterial;
 import cpw.mods.fml.common.registry.GameRegistry;
-
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class MOEItems {
@@ -55,7 +57,7 @@ public class MOEItems {
 	public static Item lebenninSword;
 	public static Item entishBranch;
 	public static Item handOfTreebeard;
-	public static Item fangornBattleaxe;
+	public static Item fangornMace;
 	public static Item fangornWarhammer;
 	public static Item fangornBow;
 
@@ -96,6 +98,9 @@ public class MOEItems {
 	public static Item lossarnachPoleaxe;
 	
 	
+	public static Block fangornCraftingTable;
+	
+	
 	//tool materials
 	public static void Init() {
 		MOEItems.preInit();
@@ -123,7 +128,7 @@ public class MOEItems {
 		entishBranch = new LOTRItemHammer(MOEMaterial.ENTISH);
 		handOfTreebeard = new LOTRItemHammer(LOTRMaterial.MALLORN_MACE);
 		fangornWarhammer = new LOTRItemHammer(MOEMaterial.FANGORN);
-		fangornBattleaxe = new LOTRItemBattleaxe(MOEMaterial.FANGORN);
+		fangornMace = new LOTRItemSword(MOEMaterial.FANGORN);
 		fangornBow = new LOTRItemBow(MOEMaterial.FANGORN);
 		
 		
@@ -169,6 +174,9 @@ public class MOEItems {
 		dragonHelm = new ItemDragonHelm();
 		
 		
+		fangornCraftingTable = new MOECraftingTableFangorn();
+		
+		
 
 		
 		
@@ -206,7 +214,7 @@ public class MOEItems {
 		MOEItems.nameAndRegisterItem(elvenCirclet, "elvenCirclet");
 		MOEItems.nameAndRegisterItem(dragonHelm, "dragonHelm");
 		MOEItems.nameAndRegisterItem(fangornWarhammer, "fangornWarhammer");
-		MOEItems.nameAndRegisterItem(fangornBattleaxe, "fangornBattleaxe");
+		MOEItems.nameAndRegisterItem(fangornMace, "fangornMace");
 		MOEItems.nameAndRegisterItem(fangornBow, "fangornBow");
 		//MOEItems.nameAndRegisterItem(fangornHelm, "fangornHelm");
 		//MOEItems.nameAndRegisterItem(fangornChestplate, "fangornChestplate");
@@ -231,7 +239,9 @@ public class MOEItems {
 		MOEItems.nameAndRegisterItem(lossarnachSpear, "lossarnachSpear");
 		MOEItems.nameAndRegisterItem(lossarnachSword, "lossarnachSword");
 		MOEItems.nameAndRegisterItem(lossarnachPoleaxe, "lossarnachPoleaxe");
+		//MOEItems.nameAndRegisterItem(fangornCraftingTable, "fangornCraftingTable");
 		
+		//MOEItems.registerBlock(fangornCraftingTable, "fangornCraftingTable");
 		
 
 
@@ -261,6 +271,28 @@ public class MOEItems {
 		item.setTextureName("lotr:" + name);
 		item.setUnlocalizedName("lotr:" + name);
 		GameRegistry.registerItem(item, name);
+	}
+	
+	public static void registerBlock(Block block, String name) {
+		String blockName = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, name);
+		block.setBlockName(blockName);
+	//	if (DRConfig.enableTextures14) {
+		//	block.setBlockTextureName("drealm:" + blockName + "14");
+		//} else {
+			block.setBlockTextureName("drealm:" + blockName);
+		//}
+		GameRegistry.registerBlock(block, blockName);
+	}
+
+	public static void registerBlock(Block block, String name, Class<? extends ItemBlock> itemClass) {
+		String blockName = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, name);
+		block.setBlockName(blockName);
+		//if (DRConfig.enableTextures14) {
+		//	block.setBlockTextureName("marchofents:" + blockName + "14");
+	//	} else {
+			block.setBlockTextureName("marchofents:" + blockName);
+	//	}
+		GameRegistry.registerBlock(block, itemClass, blockName);
 	}
 	
 

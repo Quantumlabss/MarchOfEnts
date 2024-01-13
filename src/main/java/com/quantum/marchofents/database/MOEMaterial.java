@@ -168,7 +168,7 @@ public class MOEMaterial {
     	MOEMaterial.FANGORN = newLOTRMaterial("FANGORN", 450, 3.0f, 0.5f, 7.0f, 2, 15, null);
     	MOEMaterial.ENTISH = newLOTRMaterial("ENTISH", 450, 0.0f, 0.5f, 0.0f, 0, 15, null);
     	MOEMaterial.SAURON = newLOTRMaterial("SAURON", 700, 3.0f, 0.6f, 7.0f, 2, 15, null);
-    	MOEMaterial.LOSSARNACH = newLOTRMaterial("LOSSARNACH", 450, 0.0f, 0.5f, 0.0f, 0, 15, null);
+    	MOEMaterial.LOSSARNACH = newLOTRMaterial("LOSSARNACH", 700, 3.0f, 0.6f, 7.0f, 2, 15, null);
     	MOEMaterial.setup = false;
     	}
     

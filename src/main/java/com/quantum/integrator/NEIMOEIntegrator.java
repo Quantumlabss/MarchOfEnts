@@ -3,6 +3,7 @@ package com.quantum.integrator;
 import java.util.List;
 
 import com.quantum.integrator.handler.MOEHandlerTableShaped;
+import com.quantum.marchofents.blocks.MOECraftingTableFangorn;
 import com.quantum.marchofents.util.MOERecipes;
 
 import codechicken.nei.recipe.GuiCraftingRecipe;
@@ -11,6 +12,7 @@ import codechicken.nei.recipe.TemplateRecipeHandler;
 import lotr.client.gui.LOTRGuiCraftingTable;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.item.crafting.IRecipe;
+import lotr.common.block.LOTRBlockCraftingTable;
 
 public class NEIMOEIntegrator {
 	
@@ -28,6 +30,7 @@ public class NEIMOEIntegrator {
 		//registerHandler("red_mountains", DRBlockTableRedDwarven.Gui.class, DRRecipe.redMountains);
 		//registerHandler("wind_mountains", DRBlockTableWindDwarven.Gui.class, DRRecipe.windMountains);
 		registerHandler("moe_arnor", LOTRGuiCraftingTable.Ranger.class, MOERecipes.moeArnor);
+		registerHandler("fangorn", MOECraftingTableFangorn.Gui.class, MOERecipes.fangorn);
 	}
 
 }

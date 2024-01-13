@@ -20,6 +20,8 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.Achievement;
 import lotr.common.item.LOTRMaterial;
+
+import com.quantum.marchofents.blocks.MOECraftingTableFangorn;
 import com.quantum.marchofents.database.MOEMaterial;
 import com.quantum.marchofents.util.MOECommander;
 
@@ -50,6 +52,8 @@ public class Achievements {
 	public static LOTRAchievement getFeanorianSword;
 	public static LOTRAchievement getDoriathSword;
 	public static LOTRAchievement wearGondorCrown;
+	public static LOTRAchievement useFangornTable;
+	public static LOTRAchievement craftFangornBow;
 
 	//public static EntityPlayer entity;
 	
@@ -79,6 +83,9 @@ public class Achievements {
 		//sauronset
 		getFeanorianSword = new LOTRAchievement(Category.LINDON, 850, MOEItems.feanorianSword, "getFeanorianSword").createTitle();
 		getDoriathSword = new LOTRAchievement(Category.LOTHLORIEN, 650, MOEItems.doriathSword, "getDoriathSword").createTitle();
+		
+		//useFangornTable = new LOTRAchievement(Category.FANGORN, 26, MOEItems.fangornCraftingTable, "useFangornTable").createTitle();
+		craftFangornBow = new LOTRAchievement(Category.FANGORN, 25, MOEItems.fangornBow, "craftFangornBow").createTitle();
 	}
 	
     private static LOTRAchievement createArmorAchievement(final LOTRAchievement.Category category, final int id, final Item item, final String name) {
