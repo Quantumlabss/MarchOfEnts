@@ -10,6 +10,7 @@ import com.quantum.marchofents.items.ItemFangornWarHammer;
 import com.quantum.marchofents.items.ItemFeanorianSword;
 import com.quantum.marchofents.items.ItemFingolfinArmor;
 import com.quantum.marchofents.items.ItemGondolinBattleAxe;
+import com.quantum.marchofents.items.ItemGondorCrown;
 import com.quantum.marchofents.items.ItemLebenninArmor;
 import com.quantum.marchofents.items.ItemLebenninHelmet;
 import com.quantum.marchofents.items.ItemMithrilSmithingHammer;
@@ -96,6 +97,7 @@ public class MOEItems {
 	public static Item lossarnachSword;
 	public static Item lossarnachSpear;
 	public static Item lossarnachPoleaxe;
+	public static Item gondorCrown;
 	
 	
 	public static Block fangornCraftingTable;
@@ -137,7 +139,7 @@ public class MOEItems {
 		lossarnachSpear = new LOTRItemSpear(MOEMaterial.LOSSARNACH);
 		lossarnachSword = new LOTRItemSword(MOEMaterial.LOSSARNACH);
 		lossarnachPoleaxe = new LOTRItemPolearm(MOEMaterial.LOSSARNACH);
-		nauglamir = new ItemNauglamir().setUnlocalizedName("itemNauglamir").setTextureName("marchofents:nauglamir").setCreativeTab(MarchOfEnts.tabMarchOfEnts);
+		nauglamir = new ItemNauglamir();
 		
 		//armor item
 		lebenninHelmet = new ItemLebenninHelmet();
@@ -172,16 +174,18 @@ public class MOEItems {
 		sauronChestplate = new ItemSauronChestplate();
 		
 		dragonHelm = new ItemDragonHelm();
+		gondorCrown = new ItemGondorCrown();
 		
 		
 		fangornCraftingTable = new MOECraftingTableFangorn();
+		
 		
 		
 
 		
 		
 		//Item Register
-		GameRegistry.registerItem(nauglamir, nauglamir.getUnlocalizedName().substring(5));
+		//GameRegistry.registerItem(nauglamir, nauglamir.getUnlocalizedName().substring(5));
 		
 		
 		
@@ -239,6 +243,8 @@ public class MOEItems {
 		MOEItems.nameAndRegisterItem(lossarnachSpear, "lossarnachSpear");
 		MOEItems.nameAndRegisterItem(lossarnachSword, "lossarnachSword");
 		MOEItems.nameAndRegisterItem(lossarnachPoleaxe, "lossarnachPoleaxe");
+		MOEItems.nameAndRegisterItem(nauglamir, "nauglamir");
+		MOEItems.nameAndRegisterItem(gondorCrown, "gondorCrown");
 		//MOEItems.nameAndRegisterItem(fangornCraftingTable, "fangornCraftingTable");
 		
 		//MOEItems.registerBlock(fangornCraftingTable, "fangornCraftingTable");

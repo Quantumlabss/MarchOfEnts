@@ -7,7 +7,7 @@ item.gondor_warhammer.name=Gondorian WarHammer
 item.mithril_smithing_hammer.name=Mithril Smithing Hammer
 item.nargothrond_battleaxe.name=Nargothrond BattleAxe
 item.doriath_sword.name=Doriath Sword
-item.itemNauglamir.name=Nauglamir
+item.nauglamir.name=Nauglamir
 item.numenorean_scimitar.name= Numenorean Scimitar
 item.numenorean_sword.name=Numenorean Sword
 item.pike_lebennin.name=Lebennin Pike
@@ -55,6 +55,7 @@ item.lossarnach_poleaxe.name=Lossarnach PoleAxe
 item.sauron_helm.name=Helm Of Sauron
 item.sauron_chestplate.name=Sauron's Chestplate
 item.dragon_helm.name=The Dragon Helm Of Dor-Lomin
+item.gondor_crown.name=The Crown Of Gondor
 tile.fangorn_crafting_table.name=Fangorn Crafting Table
 
 lotr.achievement.getNauglamir.title=Ruin Of Thingol
