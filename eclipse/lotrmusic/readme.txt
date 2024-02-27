@@ -12,7 +12,7 @@ Music packs are a means to gather pieces of music and have them play in-game in 
 Packs are created in the form of .zip files.
 Within the .zip file, tracks must be placed the directory "assets/lotrmusic".
 All tracks need to be in .ogg format, and their filenames must only contain standard ASCII characters.
-(That means no Ã¡, Ã¶, Ã», etc.)
+(That means no á, ö, û, etc.)
 However, titles in the .json file (see below) can contain non-standard characters.
 
 As far as I know, there is no hard limit to the track length, or the number of tracks.
@@ -102,4 +102,4 @@ cave
 
 ***
 
-NamÃ¡riÃ«, lindimaitar!
+Namárië, lindimaitar!

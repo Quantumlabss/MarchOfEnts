@@ -65,7 +65,7 @@ public class MarchOfEnts
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) 
 	{
-		NetworkRegistry.INSTANCE.registerGuiHandler(this, proxy);
+		//NetworkRegistry.INSTANCE.registerGuiHandler(this, proxy);
 		//init items
 		MOEItems.Init();
 		MOERecipes.preInit();

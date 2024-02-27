@@ -4,24 +4,7 @@ import com.google.common.base.CaseFormat;
 import com.quantum.marchofents.MarchOfEnts;
 import com.quantum.marchofents.blocks.MOECraftingTableFangorn;
 import com.quantum.marchofents.database.MOEMaterial;
-import com.quantum.marchofents.items.ItemElvenCirclet;
-import com.quantum.marchofents.items.ItemElvenEliteArmor;
-import com.quantum.marchofents.items.ItemFangornWarHammer;
-import com.quantum.marchofents.items.ItemFeanorianSword;
-import com.quantum.marchofents.items.ItemFingolfinArmor;
-import com.quantum.marchofents.items.ItemGondolinBattleAxe;
-import com.quantum.marchofents.items.ItemGondorCrown;
-import com.quantum.marchofents.items.ItemLebenninArmor;
-import com.quantum.marchofents.items.ItemLebenninHelmet;
-import com.quantum.marchofents.items.ItemMithrilSmithingHammer;
-import com.quantum.marchofents.items.ItemNargothrondBattleAxe;
-import com.quantum.marchofents.items.ItemNauglamir;
-import com.quantum.marchofents.items.ItemNumenoreanSword;
-import com.quantum.marchofents.items.ItemSauronChestplate;
-import com.quantum.marchofents.items.ItemSauronHelm;
-import com.quantum.marchofents.items.ItemDoriathSword;
-import com.quantum.marchofents.items.ItemDragonHelm;
-import com.quantum.marchofents.items.MOEItemArmor;
+import com.quantum.marchofents.items.*;
 
 import lotr.common.item.LOTRItemBattleaxe;
 import lotr.common.item.LOTRItemBow;
@@ -98,6 +81,11 @@ public class MOEItems {
 	public static Item lossarnachSpear;
 	public static Item lossarnachPoleaxe;
 	public static Item gondorCrown;
+
+	public static Item balrogHelmet;
+	public static Item balrogChestplate;
+	public static Item balrogLeggings;
+	public static Item balrogBoots;
 	
 	
 	public static Block fangornCraftingTable;
@@ -147,7 +135,8 @@ public class MOEItems {
 		lebenninChestplate = new MOEItemArmor(MOEMaterial.LEBENNIN, 1);
 		lebenninLeggings = new MOEItemArmor(MOEMaterial.LEBENNIN, 2);
 		lebenninBoots = new MOEItemArmor(MOEMaterial.LEBENNIN, 3);
-		elvenEliteHelm = new MOEItemArmor(MOEMaterial.HIGH_ELVEN_ELITE, 0);
+		//elvenEliteHelm = new MOEItemArmor(MOEMaterial.HIGH_ELVEN_ELITE, 0);
+        elvenEliteHelm = new ItemElvenEliteHelm();
 		elvenEliteChestplate = new MOEItemArmor(MOEMaterial.HIGH_ELVEN_ELITE, 1);
 		elvenEliteLeggings = new MOEItemArmor(MOEMaterial.HIGH_ELVEN_ELITE, 2);
 		elvenEliteBoots = new MOEItemArmor(MOEMaterial.HIGH_ELVEN_ELITE, 3);
@@ -175,6 +164,12 @@ public class MOEItems {
 		
 		dragonHelm = new ItemDragonHelm();
 		gondorCrown = new ItemGondorCrown();
+
+
+		balrogHelmet = new MOEItemArmor(MOEMaterial.BALROG, 0);
+		balrogChestplate = new MOEItemArmor(MOEMaterial.BALROG, 1);
+		balrogLeggings = new MOEItemArmor(MOEMaterial.BALROG, 2);
+		balrogBoots = new MOEItemArmor(MOEMaterial.BALROG, 3);
 		
 		
 		fangornCraftingTable = new MOECraftingTableFangorn();
@@ -245,6 +240,11 @@ public class MOEItems {
 		MOEItems.nameAndRegisterItem(lossarnachPoleaxe, "lossarnachPoleaxe");
 		MOEItems.nameAndRegisterItem(nauglamir, "nauglamir");
 		MOEItems.nameAndRegisterItem(gondorCrown, "gondorCrown");
+
+		MOEItems.nameAndRegisterItem(balrogHelmet, "balrogHelmet");
+		MOEItems.nameAndRegisterItem(balrogChestplate, "balrogChestplate");
+		MOEItems.nameAndRegisterItem(balrogLeggings, "balrogLeggings");
+		MOEItems.nameAndRegisterItem(balrogBoots, "balrogBoots");
 		//MOEItems.nameAndRegisterItem(fangornCraftingTable, "fangornCraftingTable");
 		
 		//MOEItems.registerBlock(fangornCraftingTable, "fangornCraftingTable");

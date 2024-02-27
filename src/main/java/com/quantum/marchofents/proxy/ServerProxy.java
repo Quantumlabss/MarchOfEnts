@@ -10,31 +10,31 @@ import cpw.mods.fml.common.network.IGuiHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
-public class ServerProxy implements IGuiHandler {
+public class ServerProxy  {
 	
 	
-	@Override
-	public Object getClientGuiElement(int ID, EntityPlayer entityplayer, World world, int i, int j, int k) {
-		MOEGuiId gui = MOEGuiId.values()[ID];
-		switch (gui) {
-			case FANGORN:
-				return new MOECraftingTableFangorn.Gui(entityplayer.inventory, world, i, j, k);
+	//@Override
+	//public Object getClientGuiElement(int ID, EntityPlayer entityplayer, World world, int i, int j, int k) {
+	//	MOEGuiId gui = MOEGuiId.values()[ID];
+	//	switch (gui) {
+		//	case FANGORN:
+			//	return new MOECraftingTableFangorn.Gui(entityplayer.inventory, world, i, j, k);
 
-			default:
-				return null;
-		}
-	}
+		//	default:
+		//		return null;
+	//	}
+//	}
 	
-	@Override
-	public Object getServerGuiElement(int ID, EntityPlayer entityplayer, World world, int i, int j, int k) {
-		MOEGuiId gui = MOEGuiId.values()[ID];
-		switch (gui) {
-			case FANGORN:
-				return new MOECraftingTableFangorn.Container(entityplayer.inventory, world, i, j, k);
-			default:
-				return null;
-		}
-	}
+//	@Override
+//	public Object getServerGuiElement(int ID, EntityPlayer entityplayer, World world, int i, int j, int k) {
+	//	MOEGuiId gui = MOEGuiId.values()[ID];
+	//	switch (gui) {
+		//	case FANGORN:
+			//	return new MOECraftingTableFangorn.Container(entityplayer.inventory, world, i, j, k);
+			//default:
+				//return null;
+		//}
+	//}
 	
 	public void onInit(FMLInitializationEvent event) {
 		
