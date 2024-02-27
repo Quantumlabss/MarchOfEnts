@@ -77,6 +77,13 @@ public class MOEModelElvenEliteHelm extends LOTRModelBiped {
     public void setRotationAngles(final float f, final float f1, final float f2, final float f3, final float f4, final float f5, final Entity entity) {
         super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
 
+        final float wingYaw = (float)Math.toRadians(-25.0);
+        final float wingPitch = (float)Math.toRadians(20.0);
+        this.wingRight.rotateAngleY = wingYaw;
+        this.wingLeft.rotateAngleY = -wingYaw;
+        this.wingRight.rotateAngleX = wingPitch;
+        this.wingLeft.rotateAngleX = wingPitch;
+
     }
 
 
