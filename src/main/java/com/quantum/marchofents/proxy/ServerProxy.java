@@ -1,17 +1,15 @@
 package com.quantum.marchofents.proxy;
 
-import com.quantum.marchofents.blocks.MOECraftingTableFangorn;
-import com.quantum.marchofents.database.MOEGuiId;
-
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.network.IGuiHandler;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.world.World;
 
 public class ServerProxy  {
-	
+
+	//public EntityPlayer getPlayerEntity(MessageContext ctx) {
+	//	return ctx.getServerHandler().playerEntity;
+	//}
+
+
 	
 	//@Override
 	//public Object getClientGuiElement(int ID, EntityPlayer entityplayer, World world, int i, int j, int k) {

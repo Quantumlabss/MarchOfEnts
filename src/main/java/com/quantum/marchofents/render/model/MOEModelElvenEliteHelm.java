@@ -27,25 +27,17 @@ public class MOEModelElvenEliteHelm extends LOTRModelBiped {
         super(f);
         (this.bipedHead = new ModelRenderer((ModelBase)this, 0, 0)).setRotationPoint(0.0f, 0.0f, 0.0f);
         this.bipedHead.addBox(-4.0f, -8.0f, -4.0f, 8, 8, 8, f);
-       // this.bipedHead.setTextureOffset(32, 0).addBox(-0.5f, -9.0f, -3.5f, 1, 1, 7, f);
-       // (this.wingRight = new ModelRenderer((ModelBase)this, 0, 16)).addBox(-4.0f - f, -6.0f, 1.0f + f, 1, 1, 9, 0.0f);
-      //  this.wingRight.setTextureOffset(20, 16).addBox(-3.5f - f, -5.0f, 1.9f + f, 0, 6, 8, 0.0f);
-     //   this.wingLeft = new ModelRenderer((ModelBase)this, 0, 16);
-      //  this.wingLeft.mirror = true;
-     //   this.wingLeft.addBox(3.0f + f, -6.0f, 1.0f + f, 1, 1, 9, 0.0f);
-     //   this.wingLeft.setTextureOffset(20, 16).addBox(3.5f + f, -5.0f, 1.9f + f, 0, 6, 8, 0.0f);
-    //    this.bipedHead.addChild(this.wingRight)
-      //  this.bipedHead.addChild(this.wingLeft);
+
         (this.spikeBack = new ModelRenderer((ModelBase)this, 0, 0)).addBox(-1.0F, -13.0F, 2.0F, 2, 5, 2, f);
-       // this.spikeBack.setTextureOffset(0, 0).addBox(-1.0F, -7.0F, -1.0F, 2, 5, 2, 0.0F);
+
         (this.spikeCenter = new ModelRenderer((ModelBase)this, 20, 16)).addBox(-1.0F, -12.0F, -1.0F, 2, 4, 2, f);
-       // this.spikeCenter.setTextureOffset(20,16).addBox(-1.0F, -6.0F, -4.0F, 2, 4, 2, 0.0f);
+
         (this.spikeFront = new ModelRenderer((ModelBase)this, 24, 0)).addBox(-1.0F, -11.0F, -4.0F, 2, 3, 2, f);
-       // this.spikeCenter.setTextureOffset(24,0).addBox(-1.0F, -5.0F, -7.0F, 2, 3, 2, 0.0f);
+
         (this.wingRight = new ModelRenderer((ModelBase)this, 10, 16)).addBox(-6.601F, -11.4F, -1.0F, 3, 8, 2, f);
-       // this.wingRight.setTextureOffset(10,16).addBox(-6.601F, -5.4F, -4.0F, 3, 8, 2, 0.0f);
+
         (this.wingLeft = new ModelRenderer((ModelBase)this, 0, 16)).addBox(3.399F, -11.4F, -1.0F, 3, 8, 2, f);
-      //  this.wingLeft.setTextureOffset(0,16).addBox(3.399F, -5.4F, -4.0F, 3, 8, 2, 0.0f);
+
         (this.wingTopLeft = new ModelRenderer((ModelBase)this, 0, 26)).addBox(2.9F, -14.4F, -1.0F, 2, 3, 2, f);
         (this.wingTopRight = new ModelRenderer((ModelBase)this, 8, 26)).addBox(-5.1F, -14.4F, -1.0F, 2, 3, 2, f);
         (this.wingTipLeft = new ModelRenderer((ModelBase)this, 24, 26)).addBox(2.9F, -16.4F, -1.0F, 1, 2, 2, f);
@@ -77,12 +69,7 @@ public class MOEModelElvenEliteHelm extends LOTRModelBiped {
     public void setRotationAngles(final float f, final float f1, final float f2, final float f3, final float f4, final float f5, final Entity entity) {
         super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
 
-        final float wingYaw = (float)Math.toRadians(-25.0);
-        final float wingPitch = (float)Math.toRadians(20.0);
-        this.wingRight.rotateAngleY = wingYaw;
-        this.wingLeft.rotateAngleY = -wingYaw;
-        this.wingRight.rotateAngleX = wingPitch;
-        this.wingLeft.rotateAngleX = wingPitch;
+
 
     }
 

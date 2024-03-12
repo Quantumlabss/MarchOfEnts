@@ -87,7 +87,8 @@ public class MOEItems {
 	public static Item balrogLeggings;
 	public static Item balrogBoots;
 	
-	
+
+
 	public static Block fangornCraftingTable;
 	
 	
@@ -115,7 +116,7 @@ public class MOEItems {
 		feanorianSword = new ItemFeanorianSword(LOTRMaterial.HIGH_ELVEN).setIsElvenBlade();
 		gondolinBattleAxe = new ItemGondolinBattleAxe(LOTRMaterial.GONDOLIN);
 		gondolinWarHammer = new LOTRItemHammer(LOTRMaterial.GONDOLIN);
-		entishBranch = new LOTRItemHammer(MOEMaterial.ENTISH);
+		//entishBranch = new LOTRItemHammer(MOEMaterial.ENTISH);
 		handOfTreebeard = new LOTRItemHammer(LOTRMaterial.MALLORN_MACE);
 		fangornWarhammer = new LOTRItemHammer(MOEMaterial.FANGORN);
 		fangornMace = new LOTRItemSword(MOEMaterial.FANGORN);
@@ -170,7 +171,8 @@ public class MOEItems {
 		balrogChestplate = new MOEItemArmor(MOEMaterial.BALROG, 1);
 		balrogLeggings = new MOEItemArmor(MOEMaterial.BALROG, 2);
 		balrogBoots = new MOEItemArmor(MOEMaterial.BALROG, 3);
-		
+
+        entishBranch = new ItemEntishBranch();
 		
 		fangornCraftingTable = new MOECraftingTableFangorn();
 		
@@ -246,7 +248,7 @@ public class MOEItems {
 		MOEItems.nameAndRegisterItem(balrogLeggings, "balrogLeggings");
 		MOEItems.nameAndRegisterItem(balrogBoots, "balrogBoots");
 		//MOEItems.nameAndRegisterItem(fangornCraftingTable, "fangornCraftingTable");
-		
+		MOEItems.nameAndRegisterItem(entishBranch, "entishBranch");
 		//MOEItems.registerBlock(fangornCraftingTable, "fangornCraftingTable");
 		
 

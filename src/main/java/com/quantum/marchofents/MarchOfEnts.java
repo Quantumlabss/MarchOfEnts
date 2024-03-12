@@ -17,17 +17,15 @@ import com.quantum.marchofents.util.MOERecipes;
 import com.quantum.marchofents.util.MOETickHandlerServer;
 
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.ModContainer;
-import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.network.NetworkRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
+import net.minecraftforge.common.MinecraftForge;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -57,11 +55,10 @@ public class MarchOfEnts
 	public static MOEEventHandler eventHandler;
 
 	
-	public static ModContainer getModContainer() {
-		return FMLCommonHandler.instance().findContainerFor(instance);
-	}
-	
-	
+
+
+
+
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) 
 	{
@@ -82,9 +79,9 @@ public class MarchOfEnts
 		}
 		
 		proxy.preInit(event);
-		
-		
-		
+
+
+
 	}
 	
 	@Mod.EventHandler
@@ -97,7 +94,9 @@ public class MarchOfEnts
 		
 		MOEShields.onInit();
 		proxy.onInit(event);
-		
+
+		//NetworkRegistry.INSTANCE.registerGuiHandler(this, new ServerProxy());
+		MinecraftForge.EVENT_BUS.register(new MOEEventHandler());
 		
 		
 		
